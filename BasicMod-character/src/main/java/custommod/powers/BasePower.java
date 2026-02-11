@@ -1,7 +1,7 @@
-package racoonslingermod.powers;
+package custommod.powers;
 
-import racoonslingermod.util.GeneralUtils;
-import racoonslingermod.util.TextureLoader;
+import custommod.util.GeneralUtils;
+import custommod.util.TextureLoader;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;

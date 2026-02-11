@@ -1,4 +1,4 @@
-package racoonslingermod.potions;
+package custommod.potions;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;

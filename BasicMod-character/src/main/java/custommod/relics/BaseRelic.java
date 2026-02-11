@@ -1,15 +1,15 @@
-package racoonslingermod.relics;
+package custommod.relics;
 
 import basemod.abstracts.CustomRelic;
 import basemod.helpers.RelicType;
-import racoonslingermod.util.GeneralUtils;
-import racoonslingermod.util.TextureLoader;
+import custommod.util.GeneralUtils;
+import custommod.util.TextureLoader;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 
-import static racoonslingermod.BasicMod.relicPath;
+import static custommod.BasicMod.relicPath;
 
 public abstract class BaseRelic extends CustomRelic {
     public AbstractCard.CardColor pool = null;

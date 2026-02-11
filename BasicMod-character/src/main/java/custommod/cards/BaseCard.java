@@ -1,11 +1,11 @@
-package racoonslingermod.cards;
+package custommod.cards;
 
 import basemod.BaseMod;
 import basemod.abstracts.CustomCard;
 import basemod.abstracts.DynamicVariable;
-import racoonslingermod.BasicMod;
-import racoonslingermod.util.CardStats;
-import racoonslingermod.util.TriFunction;
+import custommod.BasicMod;
+import custommod.util.CardStats;
+import custommod.util.TriFunction;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -18,8 +18,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import static racoonslingermod.util.GeneralUtils.removePrefix;
-import static racoonslingermod.util.TextureLoader.getCardTextureString;
+import static custommod.util.GeneralUtils.removePrefix;
+import static custommod.util.TextureLoader.getCardTextureString;
 
 
 public abstract class BaseCard extends CustomCard {

@@ -1,4 +1,4 @@
-package racoonslingermod.util;
+package custommod.util;
 
 import basemod.helpers.KeywordColorInfo;
 

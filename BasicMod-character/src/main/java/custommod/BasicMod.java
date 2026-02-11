@@ -1,12 +1,12 @@
-package racoonslingermod;
+package custommod;
 
 import basemod.BaseMod;
 import basemod.interfaces.*;
-import racoonslingermod.character.MyCharacter;
-import racoonslingermod.util.GeneralUtils;
-import racoonslingermod.util.KeywordInfo;
-import racoonslingermod.util.Sounds;
-import racoonslingermod.util.TextureLoader;
+import custommod.character.MyCharacter;
+import custommod.util.GeneralUtils;
+import custommod.util.KeywordInfo;
+import custommod.util.Sounds;
+import custommod.util.TextureLoader;
 import com.badlogic.gdx.Files;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.lwjgl.LwjglFileHandle;

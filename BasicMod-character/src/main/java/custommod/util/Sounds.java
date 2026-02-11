@@ -1,6 +1,6 @@
-package racoonslingermod.util;
+package custommod.util;
 
-import static racoonslingermod.BasicMod.audioPath;
+import static custommod.BasicMod.audioPath;
 
 public class Sounds {
     public static String TEST_SOUND = audioPath("test.wav"); //Load audio using a given path

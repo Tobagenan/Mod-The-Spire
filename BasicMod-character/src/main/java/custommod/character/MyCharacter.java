@@ -1,4 +1,4 @@
-package racoonslingermod.character;
+package custommod.character;
 
 import basemod.BaseMod;
 import basemod.abstracts.CustomEnergyOrb;
@@ -25,8 +25,8 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
 import java.util.ArrayList;
 
-import static racoonslingermod.BasicMod.characterPath;
-import static racoonslingermod.BasicMod.makeID;
+import static custommod.BasicMod.characterPath;
+import static custommod.BasicMod.makeID;
 
 public class MyCharacter extends CustomPlayer {
     //Stats
@@ -37,7 +37,7 @@ public class MyCharacter extends CustomPlayer {
     public static final int ORB_SLOTS = 0;
 
     //Strings
-    private static final String ID = makeID("Sundance"); //This should match whatever you have in the CharacterStrings.json file
+    private static final String ID = makeID("CustomMod"); //This should match whatever you have in the CharacterStrings.json file
     private static String[] getNames() { return CardCrawlGame.languagePack.getCharacterString(ID).NAMES; }
     private static String[] getText() { return CardCrawlGame.languagePack.getCharacterString(ID).TEXT; }
 
@@ -46,7 +46,7 @@ public class MyCharacter extends CustomPlayer {
         //These are used to identify your character, as well as your character's card color.
         //Library color is basically the same as card color, but you need both because that's how the game was made.
         @SpireEnum
-        public static PlayerClass Racoon_Slinger;
+        public static PlayerClass Custom_Mod;
         @SpireEnum(name = "CHARACTER_BROWN_COLOR") // These two MUST match. Change it to something unique for your character.
         public static AbstractCard.CardColor CARD_COLOR;
         @SpireEnum(name = "CHARACTER_BROWN_COLOR") @SuppressWarnings("unused")
@@ -117,7 +117,7 @@ public class MyCharacter extends CustomPlayer {
     //Actual character class code below this point
 
     public MyCharacter() {
-        super(getNames()[0], Meta.Racoon_Slinger,
+        super(getNames()[0], Meta.Custom_Mod,
                 new CustomEnergyOrb(orbTextures, characterPath("energyorb/vfx.png"), layerSpeeds), //Energy Orb
                 new SpriterAnimation(characterPath("animation/default.scml"))); //Animation
 

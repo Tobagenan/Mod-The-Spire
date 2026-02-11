@@ -1,4 +1,4 @@
-package racoonslingermod.util;
+package custommod.util;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 
