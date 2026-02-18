@@ -64,6 +64,12 @@ They have 1 starter relic, and some number of relics spread out in the common, u
 
 Focus more on cards than relics; character specific relics (besides the starter) are relatively uncommon to encounter and don't harm the experience too much if they're missing. But they do add a bit of nice variety to the gameplay since they can interact directly with character mechanics, unlike generic relics."
 
+https://github.com/Alchyr/BasicMod/wiki/Adding-Cards
+Adding Cards
+under the cards folder create cards new class each card
+make name, make stats / logic, damage / defense, and stuff
+go to card strings put in modID:cardID, name, and description 
+in MyCharacter.java ~line 140 getStartingDeck add the cards.
 
 
 
