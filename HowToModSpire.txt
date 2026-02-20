@@ -1,0 +1,75 @@
+How to make slay the spire mod
+
+https://github.com/Alchyr/BasicMod/wiki/BasicMod-Setup
+Download
+all the mods for basic
+basic character mod
+Open pom.xml
+
+Change
+the titles version  and anything between versions
+
+STUCK ON (unstuck)
+getting jetbrains IDE to get JDK 
+need java version 1.8
+LITERALLY HAD THE WRONG PROGRAM
+no jetbrain rider need intellij
+
+Renaming your mod
+refractor->rename basic mod under java [racoonslinger]
+then in whole project all directories (no spaces)
+rename the top basicmod to NAMEOFGUYMod [RacoonSlingerMod]
+
+https://github.com/Alchyr/BasicMod/wiki/Testing
+TESTING
+add the maven tool if you dont have
+use options in lifecycle to clean then package code
+can open modded spire and select mod usually wanna isolate with base mods
+worked for me
+
+Debugging
+add config
+add jar application
+get the right file locations
+
+Packaging on setup
+before launch -> + -> run maven goal
+in working directory put clean then package
+options for more commants like skip load in or autoquit
+
+actual testing
+use debug when you want to find error in lines, has breakpoints to pause code
+
+https://github.com/Alchyr/BasicMod/wiki/The-Main-Mod-File
+The main mod file
+needed to refresh maven resources
+
+https://github.com/Alchyr/BasicMod/wiki/Adding-Content
+adding content
+many links for options on what to change
+
+https://github.com/Alchyr/BasicMod/wiki/Adding-a-character
+adding character, most of it is predone since used character template from the start
+resources/YOURMODNAME/localization/eng/CharacterStrings.json
+change name and other text info
+most of everything is already done for character class by selecting the template
+to the point where i can select character with details and get through first combat but crashes immediately bc not enough cards. epic
+WHATS NEXT
+
+Help / tips: 
+"Standard characters have a pool of 75 cards, in a ratio of approximately 1:2:1 Common:Uncommon:Rare.
+You'll need at least 3 common, uncommon, and rare cards to avoid card rewards freezing/crashing the game, and two attacks, two skills, and one power for shops to not crash. If you pick up question card you'd need 4 of each rarity. Until you fill out the card pool, expect crashes during testing. You can use Prismatic Shard as the starting relic if you want to avoid dealing with this right away.
+
+They have 1 starter relic, and some number of relics spread out in the common, uncommon, and rare pools. All basegame characters have 1 common relic. Watcher has 2 uncommon relics, the others have 1. Ironclad and Silent have 3 rare relics; Watcher has 2, and Defect has 1. Characters generally have 3 boss relics. 1 starter relic upgrade (please make yours better than the basegame upgrades), 1 non-energy relic, and 1 energy relic. Watcher only has 2 boss relics.
+
+Focus more on cards than relics; character specific relics (besides the starter) are relatively uncommon to encounter and don't harm the experience too much if they're missing. But they do add a bit of nice variety to the gameplay since they can interact directly with character mechanics, unlike generic relics."
+
+https://github.com/Alchyr/BasicMod/wiki/Adding-Cards
+Adding Cards
+under the cards folder create cards new class each card
+make name, make stats / logic, damage / defense, and stuff
+go to card strings put in modID:cardID, name, and description 
+in MyCharacter.java ~line 140 getStartingDeck add the cards.
+
+
+
