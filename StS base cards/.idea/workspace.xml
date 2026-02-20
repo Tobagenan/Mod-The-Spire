@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="58e60348-3f05-4547-bc0c-9fc24ee07420" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/Apotheosis.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/Apparition.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/BandageUp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/Bite.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/Blind.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/Chrysalis.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/DarkShackles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/DeepBreath.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/Discovery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/DramaticEntrance.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/Enlightenment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/Finesse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/FlashOfSteel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/Forethought.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/GoodInstincts.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/HandOfGreed.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/Impatience.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/JAX.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/JackOfAllTrades.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/Madness.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/Magnetism.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/MasterOfStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/Mayhem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/Metamorphosis.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/MindBlast.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/Panacea.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/Panache.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/PanicButton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/Purity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/RitualDagger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/SadisticNature.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/SecretTechnique.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/SecretWeapon.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/SwiftStrike.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/TheBomb.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/ThinkingAhead.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/Transmutation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/Trip.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/colorless/Violence.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/curses/AscendersBane.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/curses/Clumsy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/curses/CurseOfTheBell.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/curses/Decay.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/curses/Doubt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/curses/Injury.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/curses/Necronomicurse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/curses/Normality.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/curses/Pain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/curses/Parasite.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/curses/Pride.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/curses/Regret.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/curses/Shame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/curses/Writhe.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/AThousandCuts.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Accuracy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Acrobatics.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Adrenaline.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/AfterImage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Alchemize.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/AllOutAttack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Backflip.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Backstab.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Bane.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/BladeDance.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Blur.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/BouncingFlask.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/BulletTime.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Burst.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/CalculatedGamble.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Caltrops.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Catalyst.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Choke.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/CloakAndDagger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Concentrate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/CorpseExplosion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/CripplingPoison.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/DaggerSpray.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/DaggerThrow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Dash.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/DeadlyPoison.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Defend_Green.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Deflect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/DieDieDie.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Distraction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/DodgeAndRoll.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Doppelganger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/EndlessAgony.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Envenom.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/EscapePlan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Eviscerate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Expertise.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Finisher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Flechettes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/FlyingKnee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Footwork.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/GlassKnife.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/GrandFinale.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/HeelHook.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/InfiniteBlades.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/LegSweep.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Malaise.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/MasterfulStab.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Neutralize.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Nightmare.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/NoxiousFumes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Outmaneuver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/PhantasmalKiller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/PiercingWail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/PoisonedStab.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Predator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Prepared.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/QuickSlash.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Reflex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/RiddleWithHoles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Setup.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Skewer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Slice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/SneakyStrike.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/StormOfSteel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Strike_Green.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/SuckerPunch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Survivor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Tactician.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Terror.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/ToolsOfTheTrade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/Unload.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/WellLaidPlans.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/green/WraithForm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Alpha.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/BattleHymn.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Blasphemy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/BowlingBash.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Brilliance.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/CarveReality.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Collect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Conclude.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/ConjureBlade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Consecrate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Crescendo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/CrushJoints.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/CutThroughFate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/DeceiveReality.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Defend_Watcher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/DeusExMachina.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/DevaForm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Devotion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Discipline.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/EmptyBody.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/EmptyFist.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/EmptyMind.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Eruption.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Establishment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Evaluate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Fasting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/FearNoEvil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/FlurryOfBlows.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/FlyingSleeves.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/FollowUp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/ForeignInfluence.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Foresight.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Halt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Indignation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/InnerPeace.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Judgement.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/JustLucky.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/LessonLearned.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/LikeWater.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/MasterReality.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Meditate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/MentalFortress.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Nirvana.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Omniscience.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Perseverance.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Pray.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/PressurePoints.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Prostrate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Protect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Ragnarok.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/ReachHeaven.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Rushdown.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Sanctity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/SandsOfTime.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/SashWhip.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Scrawl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/SignatureMove.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/SimmeringFury.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/SpiritShield.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Strike_Purple.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Study.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Swivel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/TalkToTheHand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Tantrum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/ThirdEye.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Tranquility.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Unraveling.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Vault.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Vigilance.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Wallop.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/WaveOfTheHand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Weave.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/WheelKick.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/WindmillStrike.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Wish.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/Worship.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/purple/WreathOfFlame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Anger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Armaments.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Barricade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Bash.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/BattleTrance.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Berserk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/BloodForBlood.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Bloodletting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Bludgeon.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/BodySlam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Brutality.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/BurningPact.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Carnage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Clash.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Cleave.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Clothesline.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Combust.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Corruption.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/DarkEmbrace.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Defend_Red.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/DemonForm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Disarm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/DoubleTap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Dropkick.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/DualWield.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Entrench.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Evolve.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Exhume.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Feed.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/FeelNoPain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/FiendFire.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/FireBreathing.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/FlameBarrier.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Flex.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/GhostlyArmor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Havoc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Headbutt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/HeavyBlade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Hemokinesis.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Immolate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Impervious.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/InfernalBlade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Inflame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Intimidate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/IronWave.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Juggernaut.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/LimitBreak.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Metallicize.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Offering.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/PerfectedStrike.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/PommelStrike.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/PowerThrough.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Pummel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Rage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Rampage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Reaper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/RecklessCharge.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Rupture.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/SearingBlow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/SecondWind.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/SeeingRed.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Sentinel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/SeverSoul.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Shockwave.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/ShrugItOff.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/SpotWeakness.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Strike_Red.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/SwordBoomerang.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/ThunderClap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/TrueGrit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/TwinStrike.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Uppercut.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Warcry.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/Whirlwind.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/red/WildStrike.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/status/Burn.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/status/Dazed.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/status/Slimed.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/status/VoidCard.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cards/status/Wound.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="39dbIt8pE0XLOecx6lB89H1f0UN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Yeyian PC/Documents/Mod-The-Spire/StS base cards",
+    "onboarding.tips.debug.path": "C:/Users/Yeyian PC/Documents/Mod-The-Spire/StS base cards/Cards/src/Main.java",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.import"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Yeyian PC\Documents\Mod-The-Spire\StS base cards" />
+      <recent name="C:\Users\Yeyian PC\Documents\Mod-The-Spire\StS base cards\.idea" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Yeyian PC\Documents\Mod-The-Spire\StS base cards\Cards" />
+      <recent name="C:\Users\Yeyian PC\Documents\Mod-The-Spire\StS base cards" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58e60348-3f05-4547-bc0c-9fc24ee07420" name="Changes" comment="" />
+      <created>1771028819052</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1771028819052</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Cards/src/Main.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
