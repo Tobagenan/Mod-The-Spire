@@ -140,10 +140,10 @@ public class MyCharacter extends CustomPlayer {
         //If you want multiple of the same card, you have to add it multiple times.
         retVal.add(Strike.ID);
         retVal.add(Strike.ID);
-        retVal.add(Strike.ID);
-        retVal.add(Strike.ID);
-        retVal.add(Defend.ID);
-        retVal.add(Defend.ID);
+//        retVal.add(Strike.ID);
+//        retVal.add(Strike.ID);
+//        retVal.add(Defend.ID);
+//        retVal.add(Defend.ID);
         retVal.add(Defend.ID);
         retVal.add(Defend.ID);
         retVal.add(FastHand.ID);
@@ -174,6 +174,8 @@ public class MyCharacter extends CustomPlayer {
 //        retVal.add(BackupMag.ID);
 //        retVal.add(HawkEye.ID);
         retVal.add(MustacheSnacks.ID);
+        retVal.add(Scrounge.ID);
+        retVal.add(Strays.ID);
 
         return retVal;
     }

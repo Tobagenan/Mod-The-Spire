@@ -139,5 +139,9 @@
   "${modID}:AnteUp": {
     "NAME": "Ante Up",
     "DESCRIPTION": "Deal !D! damage. NL Put the next card you play this turn on top of your draw pile."
+  },
+  "${modID}:Strays": {
+    "NAME": "Strays",
+    "DESCRIPTION": "Deal !D! damage to a random enemy twice."
   }
 }
