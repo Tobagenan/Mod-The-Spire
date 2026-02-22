@@ -129,7 +129,7 @@
   },
   "${modID}:MustacheSnacks": {
     "NAME": "Mustache Snacks",
-    "DESCRIPTION": "Deal !D! damage. Next turn, NL gain [G].",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Next turn, NL gain [G] [G]."
+    "DESCRIPTION": "Deal !D! damage. Next turn, gain [E].",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Next turn, gain [E] [E]."
   }
 }

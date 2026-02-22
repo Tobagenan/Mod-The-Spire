@@ -32,9 +32,9 @@ public class MustacheSnacks extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         if (!this.upgraded) {
-            this.addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, 2), 2));
+            this.addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, 1), 1));
         } else {
-            this.addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, 3), 3));
+            this.addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, 2), 2));
         }
         this.addToBot(new ApplyPowerAction(m, p, new LockOnPower(m, this.magicNumber), this.magicNumber));
     }
