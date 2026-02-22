@@ -176,6 +176,7 @@ public class MyCharacter extends CustomPlayer {
 //        retVal.add(BackupMag.ID);
 //        retVal.add(HawkEye.ID);
         retVal.add(MustacheSnacks.ID);
+        retVal.add(Scrounge.ID);
 
         return retVal;
     }
