@@ -131,5 +131,9 @@
     "NAME": "Mustache Snacks",
     "DESCRIPTION": "Deal !D! damage. Next turn, gain [E].",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. Next turn, gain [E] [E]."
+  },
+  "${modID}:AnteUp": {
+    "NAME": "Ante Up",
+    "DESCRIPTION": "Deal !D! damage. NL Put the next card you play this turn on top of your draw pile."
   }
 }

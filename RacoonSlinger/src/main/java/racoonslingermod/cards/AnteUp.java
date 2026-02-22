@@ -9,43 +9,36 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.EnergizedPower;
 import com.megacrit.cardcrawl.powers.LockOnPower;
+import com.megacrit.cardcrawl.powers.ReboundPower;
 import racoonslingermod.character.MyCharacter;
 import racoonslingermod.util.CardStats;
 
-public class MustacheSnacks extends BaseCard {
+public class AnteUp extends BaseCard {
     public static final String ID = makeID(AnteUp.class.getSimpleName());
     private static final CardStats info = new CardStats(
             MyCharacter.Meta.CARD_COLOR,
             CardType.ATTACK,
-            CardRarity.UNCOMMON,
+            CardRarity.COMMON,
             CardTarget.ENEMY,
             1
     );
 
-    public MustacheSnacks() {
+    public AnteUp() {
         super(ID, info);
-        this.baseDamage = 7;
+        this.baseDamage = 9;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        if (!this.upgraded) {
-            this.addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, 1), 1));
-        } else {
-            this.addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, 2), 2));
-        }
-        this.addToBot(new ApplyPowerAction(m, p, new LockOnPower(m, this.magicNumber), this.magicNumber));
+        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        this.addToBot(new ApplyPowerAction(p, p, new ReboundPower(p), 1));
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeDamage(3);
-            this.upgradeMagicNumber(1);
             this.upgradeName();
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            this.initializeDescription();
         }
     }
 
