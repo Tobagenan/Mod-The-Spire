@@ -42,6 +42,8 @@ public class MustacheSnacks extends BaseCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
             this.upgradeDamage(3);
             this.upgradeMagicNumber(1);
         }
