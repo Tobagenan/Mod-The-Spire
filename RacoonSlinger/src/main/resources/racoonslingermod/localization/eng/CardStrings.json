@@ -126,5 +126,10 @@
   "${modID}:HawkEye": {
     "NAME": "Hawk Eye",
     "DESCRIPTION": "Gain !M! Focus."
+  },
+  "${modID}:MustacheSnacks": {
+    "NAME": "Mustache Snacks",
+    "DESCRIPTION": "Deal !D! damage. Next turn, NL gain [G].",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Next turn, NL gain [G] [G]."
   }
 }
