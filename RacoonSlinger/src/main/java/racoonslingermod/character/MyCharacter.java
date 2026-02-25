@@ -175,8 +175,10 @@ public class MyCharacter extends CustomPlayer {
 //        retVal.add(HawkEye.ID);
         retVal.add(MustacheSnacks.ID);
         retVal.add(Scrounge.ID);
-        retVal.add(Strays.ID);
-        retVal.add(QuickSnap.ID);
+//        retVal.add(Strays.ID);
+//        retVal.add(QuickSnap.ID);
+        retVal.add(KneeShot.ID);
+        retVal.add(Disarm.ID);
 
         return retVal;
     }

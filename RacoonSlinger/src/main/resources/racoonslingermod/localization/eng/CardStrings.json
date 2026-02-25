@@ -147,5 +147,13 @@
   "${modID}:QuickSnap": {
     "NAME": "Quick Snap",
     "DESCRIPTION": "Deal !D! damage, load !M! defensive bullet."
+  },
+  "${modID}:KneeShot": {
+    "NAME": "Knee Shot",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
+  },
+  "${modID}:Disarm": {
+    "NAME": "Disarm",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Frail."
   }
 }
