@@ -155,5 +155,9 @@
   "${modID}:Disarm": {
     "NAME": "Disarm",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Frail."
+  },
+  "${modID}:HotPotato": {
+    "NAME": "Hot Potato",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card. NL Discard !M! card."
   }
 }

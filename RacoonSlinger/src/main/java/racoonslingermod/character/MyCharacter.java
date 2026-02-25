@@ -179,6 +179,7 @@ public class MyCharacter extends CustomPlayer {
 //        retVal.add(QuickSnap.ID);
         retVal.add(KneeShot.ID);
         retVal.add(Disarm.ID);
+        retVal.add(HotPotato.ID);
 
         return retVal;
     }
