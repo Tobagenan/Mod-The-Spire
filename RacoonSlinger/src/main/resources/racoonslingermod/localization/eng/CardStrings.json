@@ -143,5 +143,9 @@
   "${modID}:Strays": {
     "NAME": "Strays",
     "DESCRIPTION": "Deal !D! damage to a random enemy twice."
+  },
+  "${modID}:QuickSnap": {
+    "NAME": "Quick Snap",
+    "DESCRIPTION": "Deal !D! damage, load !M! defensive bullet."
   }
 }
