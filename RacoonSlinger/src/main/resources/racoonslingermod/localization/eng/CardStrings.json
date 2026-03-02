@@ -159,5 +159,14 @@
   "${modID}:HotPotato": {
     "NAME": "Hot Potato",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! card. NL Discard !M! card."
+  },
+  "${modID}:TakeCover": {
+    "NAME": "Take Cover",
+    "DESCRIPTION": "Gain Block equal to !M! times the number of Bullets Loaded this combat.",
+    "UPGRADE_DESCRIPTION": "",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Gain !B! Block.)",
+      ""
+    ]
   }
 }
