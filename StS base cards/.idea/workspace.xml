@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58e60348-3f05-4547-bc0c-9fc24ee07420" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../RacoonSlinger/src/main/java/racoonslingermod/cards/Defend.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RacoonSlinger/src/main/java/racoonslingermod/cards/Defend.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RacoonSlinger/src/main/java/racoonslingermod/character/MyCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RacoonSlinger/src/main/java/racoonslingermod/character/MyCharacter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RacoonSlinger/src/main/resources/racoonslingermod/localization/eng/CardStrings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../RacoonSlinger/src/main/resources/racoonslingermod/localization/eng/CardStrings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -25,18 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Tobagenan"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Tobagenan&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Tobagenan/Mod-The-Spire.git",
-    "accountId": "2b41a0c4-d536-43b2-ae25-32902b811842"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Tobagenan/Mod-The-Spire.git&quot;,
+    &quot;accountId&quot;: &quot;2b41a0c4-d536-43b2-ae25-32902b811842&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />

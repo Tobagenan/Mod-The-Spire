@@ -168,5 +168,9 @@
       " NL (Gain !B! Block.)",
       ""
     ]
+  },
+  "${modID}:Mulligan": {
+    "NAME": "Mulligan",
+    "DESCRIPTION": "Exhaust any number of cards, then draw that many. NL Exhaust."
   }
 }
