@@ -1,5 +1,7 @@
 package racoonslingermod.powers;
 
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -12,10 +14,9 @@ import static racoonslingermod.BasicMod.makeID;
 
 public class LoseFocusPower extends AbstractPower {
 
-    public static final String POWER_ID = makeID(racoonslingermod.powers.LoseFocusPower.class.getSimpleName());
+    public static final String POWER_ID = makeID(LoseFocusPower.class.getSimpleName());
     private static final PowerStrings powerStrings =
             CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
-
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
@@ -29,7 +30,15 @@ public class LoseFocusPower extends AbstractPower {
 
         // reuse existing icon there is a strength down texture not sure what
         // there's also the bias icon so maybe make similar
-        this.loadRegion("focus");
+        this.img = new Texture("racoonslingermod/images/powers/focus_down.png");
+
+        try {
+            Texture largeTex = new Texture("racoonslingermod/images/powers/focus_down_large.png");
+            this.region128 = new TextureAtlas.AtlasRegion(largeTex, 0, 0, 109, 109);
+        } catch (Exception e) {
+            // If the large PNG doesn’t exist, skip it — won’t crash
+            this.region128 = null;
+        }
 
         updateDescription();
     }
@@ -48,11 +57,7 @@ public class LoseFocusPower extends AbstractPower {
             ));
 
             // Remove this power
-            addToBot(new RemoveSpecificPowerAction(
-                    owner,
-                    owner,
-                    this.ID
-            ));
+            addToBot(new RemoveSpecificPowerAction(owner, owner, this.ID));
         }
     }
 

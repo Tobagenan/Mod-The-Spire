@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58e60348-3f05-4547-bc0c-9fc24ee07420" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../RacoonSlinger/src/main/java/racoonslingermod/character/MyCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RacoonSlinger/src/main/java/racoonslingermod/character/MyCharacter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RacoonSlinger/src/main/resources/racoonslingermod/localization/eng/CardStrings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../RacoonSlinger/src/main/resources/racoonslingermod/localization/eng/CardStrings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RacoonSlinger/src/main/java/racoonslingermod/powers/LoseFocusPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RacoonSlinger/src/main/java/racoonslingermod/powers/LoseFocusPower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
