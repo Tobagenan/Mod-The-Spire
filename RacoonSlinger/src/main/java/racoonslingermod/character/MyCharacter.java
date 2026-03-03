@@ -183,7 +183,7 @@ public class MyCharacter extends CustomPlayer {
         retVal.add(TakeCover.ID);
         retVal.add(Mulligan.ID);
         retVal.add(PowerPlay.ID);
-
+        retVal.add(Prefire.ID);
 
         return retVal;
     }

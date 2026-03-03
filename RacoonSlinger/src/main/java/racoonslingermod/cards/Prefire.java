@@ -3,13 +3,15 @@ package racoonslingermod.cards;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.StormPower;
+import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import com.megacrit.cardcrawl.powers.LoopPower;
 import racoonslingermod.character.MyCharacter;
 import racoonslingermod.util.CardStats;
 
-public class PowerPlay extends BaseCard {
-    public static final String ID = makeID(racoonslingermod.cards.PowerPlay.class.getSimpleName());
+public class Prefire extends BaseCard {
+    public static final String ID = makeID(racoonslingermod.cards.Prefire.class.getSimpleName());
 
     private static final CardStats info = new CardStats(
             MyCharacter.Meta.CARD_COLOR,
@@ -19,26 +21,24 @@ public class PowerPlay extends BaseCard {
             1
     );
 
-    public PowerPlay() {
+    public Prefire() {
         super(ID,info);
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
-
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        //currently uses stormpower action, I want to replace this with orb loading power class
-        this.addToBot(new ApplyPowerAction(p, p, new StormPower(p, this.magicNumber), this.magicNumber));
+        this.addToBot(new ApplyPowerAction(p, p, new LoopPower(p, this.magicNumber), this.magicNumber));
     }
-//    THIS is the function storm uses not too bad would need to replace just the new lightning()
-//    can change it to channel random, can change it once have different names for the bullets
-//    animation effects need to change too
-//    public void onUseCard(AbstractCard card, UseCardAction action) {
-//        if (card.type == CardType.POWER && this.amount > 0) {
+
+//    Function that calls the loop
+//    public void atStartOfTurn() {
+//        if (!AbstractDungeon.player.orbs.isEmpty()) {
 //            this.flash();
 //
 //            for(int i = 0; i < this.amount; ++i) {
-//                this.addToBot(new ChannelAction(new Lightning()));
+//                ((AbstractOrb)AbstractDungeon.player.orbs.get(0)).onStartOfTurn();
+//                ((AbstractOrb)AbstractDungeon.player.orbs.get(0)).onEndOfTurn();
 //            }
 //        }
 //
@@ -47,13 +47,13 @@ public class PowerPlay extends BaseCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.isInnate = true;
+            this.upgradeMagicNumber(1);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             this.initializeDescription();
         }
     }
 
     @Override
-    public AbstractCard makeCopy() {return new PowerPlay();}
+    public AbstractCard makeCopy() {return new Prefire();}
 
 }
