@@ -172,5 +172,10 @@
   "${modID}:Mulligan": {
     "NAME": "Mulligan",
     "DESCRIPTION": "Exhaust any number of cards, then draw that many. NL Exhaust."
+  },
+  "${modID}:PowerPlay": {
+    "NAME": "Power Play",
+    "DESCRIPTION": "Whenever you play a Power card, Channel !M! Bullet.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play a Power card, Channel !M! Bullet."
   }
 }

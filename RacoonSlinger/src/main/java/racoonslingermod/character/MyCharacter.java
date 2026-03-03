@@ -182,6 +182,7 @@ public class MyCharacter extends CustomPlayer {
 //        retVal.add(HotPotato.ID);
         retVal.add(TakeCover.ID);
         retVal.add(Mulligan.ID);
+        retVal.add(PowerPlay.ID);
 
 
         return retVal;
