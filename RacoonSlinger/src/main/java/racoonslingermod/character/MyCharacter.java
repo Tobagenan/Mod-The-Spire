@@ -164,7 +164,7 @@ public class MyCharacter extends CustomPlayer {
 //        retVal.add(CoverUp.ID);
 //        retVal.add(FirstMove.ID);
 //        retVal.add(Standoff.ID);
-//        retVal.add(Gamble.ID);
+        retVal.add(Gamble.ID);
 //        retVal.add(Intimidate.ID);
         retVal.add(TopOff.ID);
 //        retVal.add(ReflexFire.ID);
@@ -174,16 +174,18 @@ public class MyCharacter extends CustomPlayer {
 //        retVal.add(BackupMag.ID);
 //        retVal.add(HawkEye.ID);
         retVal.add(MustacheSnacks.ID);
-        retVal.add(Scrounge.ID);
+//        retVal.add(Scrounge.ID);
 //        retVal.add(Strays.ID);
 //        retVal.add(QuickSnap.ID);
 //        retVal.add(KneeShot.ID);
 //        retVal.add(Disarm.ID);
 //        retVal.add(HotPotato.ID);
-        retVal.add(TakeCover.ID);
-        retVal.add(Mulligan.ID);
+//        retVal.add(TakeCover.ID);
+//        retVal.add(Mulligan.ID);
         retVal.add(PowerPlay.ID);
-        retVal.add(Prefire.ID);
+//        retVal.add(Prefire.ID);
+        retVal.add(PhotonBlaster.ID);
+        retVal.add(OlReliable.ID);
 
         return retVal;
     }

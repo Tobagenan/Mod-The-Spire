@@ -13,7 +13,7 @@ import racoonslingermod.character.MyCharacter;
 import racoonslingermod.util.CardStats;
 
 public class MustacheSnacks extends BaseCard {
-    public static final String ID = makeID(AnteUp.class.getSimpleName());
+    public static final String ID = makeID(MustacheSnacks.class.getSimpleName());
     private static final CardStats info = new CardStats(
             MyCharacter.Meta.CARD_COLOR,
             CardType.ATTACK,
@@ -51,6 +51,6 @@ public class MustacheSnacks extends BaseCard {
 
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new AnteUp();
+        return new MustacheSnacks();
     }
 }

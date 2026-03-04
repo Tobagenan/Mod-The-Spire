@@ -181,5 +181,15 @@
   "${modID}:Prefire": {
     "NAME": "Prefire",
     "DESCRIPTION": "At the start of your turn, trigger the passive ability of your next Orb."
+  },
+  "${modID}:PhotonBlaster": {
+    "NAME": "Photon Blaster",
+    "DESCRIPTION": "Deal !D! damage. NL Load !M! Photon Bullet. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Load !M! Photon Bullets. NL Exhaust."
+  },
+  "${modID}:OlReliable": {
+    "NAME": "Ol' Reliable",
+    "DESCRIPTION": "Fire your next Bullet X times.",
+    "UPGRADE_DESCRIPTION": "Fire your next Bullet X+1 times."
   }
 }
