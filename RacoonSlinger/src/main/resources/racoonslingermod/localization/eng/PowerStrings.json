@@ -11,5 +11,13 @@
       "At the end of this turn, lose ",
       " Focus."
     ]
+  },
+  "${modID}:ChannelAmplifyPower": {
+    "NAME": "Channel Amplify",
+    "DESCRIPTIONS": [
+      "The next time you channel an Orb this turn, channel it 1 additional time.",
+      "The next time you channel an Orb this turn, channel it ",
+      " additional times."
+    ]
   }
 }

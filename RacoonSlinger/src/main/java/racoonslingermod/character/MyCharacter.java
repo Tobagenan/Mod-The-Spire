@@ -186,6 +186,7 @@ public class MyCharacter extends CustomPlayer {
 //        retVal.add(Prefire.ID);
         retVal.add(PhotonBlaster.ID);
         retVal.add(OlReliable.ID);
+        retVal.add(ExtraShot.ID);
 
         return retVal;
     }

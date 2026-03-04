@@ -41,6 +41,8 @@ public class PhotonBlaster extends BaseCard {
             this.upgradeDamage(4);
             this.upgradeMagicNumber(1);
             this.upgradeName();
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 

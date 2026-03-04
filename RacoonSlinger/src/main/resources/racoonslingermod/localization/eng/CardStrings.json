@@ -107,8 +107,8 @@
   },
   "${modID}:Deadweight": {
     "NAME": "Deadweight",
-    "DESCRIPTION": "Gain !B! Block. NL If this card is Exhausted, gain [E] [E].",
-    "UPGRADE_DESCRIPTION":"Gain !B! Block. NL If this card is Exhausted, gain [E] [E] [E]."
+    "DESCRIPTION": "Gain !B! Block. NL If this card is Exhausted. NL Gain [E] [E].",
+    "UPGRADE_DESCRIPTION":"Gain !B! Block. NL If this card is Exhausted. NL Gain [E] [E] [E]."
   },
   "${modID}:ItsHighNoon": {
     "NAME": "It's High Noon",
@@ -191,5 +191,10 @@
     "NAME": "Ol' Reliable",
     "DESCRIPTION": "Fire your next Bullet X times.",
     "UPGRADE_DESCRIPTION": "Fire your next Bullet X+1 times."
+  },
+  "${modID}:ExtraShot": {
+    "NAME": "Extra Shot",
+    "DESCRIPTION": "This turn, your next Orb channelled is channelled twice.",
+    "UPGRADE_DESCRIPTION": "This turn, your next !M! Orbs channelled are channelled twice."
   }
 }
