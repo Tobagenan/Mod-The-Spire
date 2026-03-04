@@ -196,5 +196,23 @@
     "NAME": "Extra Shot",
     "DESCRIPTION": "This turn, your next Orb channelled is channelled twice.",
     "UPGRADE_DESCRIPTION": "This turn, your next !M! Orbs channelled are channelled twice."
+  },
+  "${modID}:JunkDrawer": {
+    "NAME": "Junk Drawer",
+    "DESCRIPTION": "Channel !M! [B] Bullet. NL Channel !M! [R] Bullet. NL Channel !M! [G] Bullet. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Channel !M! [B] Bullet. NL Channel !M! [R] Bullet. NL Channel !M! [G] Bullet."
+  },
+  "${modID}:Volley": {
+    "NAME": "Volley",
+    "DESCRIPTION": "Bullets hit all enemies, load !M! Bullets."
+  },
+  "${modID}:MoreOptions": {
+    "NAME": "More Options",
+    "DESCRIPTION": "At the start of your turn, draw !M! additional card.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, draw !M! additional card."
+  },
+  "${modID}:ChamberSpin": {
+    "NAME": "Chamber Spin",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card for each unique Orb you have."
   }
 }
