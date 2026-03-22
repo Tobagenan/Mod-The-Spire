@@ -214,5 +214,10 @@
   "${modID}:ChamberSpin": {
     "NAME": "Chamber Spin",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! card for each unique Orb you have."
+  },
+  "${modID}:LetEmFly": {
+    "NAME": "Let Em Fly",
+    "DESCRIPTION": "Fire all Bullets. NL Load 1 Bullet for each fired. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Fire all Bullets. NL Reload each Bullet. NL Exhaust."
   }
 }

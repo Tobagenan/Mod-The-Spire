@@ -191,6 +191,7 @@ public class MyCharacter extends CustomPlayer {
         retVal.add(Volley.ID);
         retVal.add(MoreOptions.ID);
         retVal.add(ChamberSpin.ID);
+        retVal.add(LetEmFly.ID);
 
         return retVal;
     }
