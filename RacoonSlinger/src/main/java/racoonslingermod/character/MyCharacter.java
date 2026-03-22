@@ -139,9 +139,9 @@ public class MyCharacter extends CustomPlayer {
         //List of IDs of cards for your starting deck.
         //If you want multiple of the same card, you have to add it multiple times.
         retVal.add(Strike.ID);
-//        retVal.add(Strike.ID);
-//        retVal.add(Strike.ID);
-//        retVal.add(Strike.ID);
+        retVal.add(Strike.ID);
+        retVal.add(Strike.ID);
+        retVal.add(Strike.ID);
 //        retVal.add(Defend.ID);
 //        retVal.add(Defend.ID);
 //        retVal.add(Defend.ID);
@@ -182,16 +182,17 @@ public class MyCharacter extends CustomPlayer {
 //        retVal.add(HotPotato.ID);
 //        retVal.add(TakeCover.ID);
 //        retVal.add(Mulligan.ID);
-        retVal.add(PowerPlay.ID);
+//        retVal.add(PowerPlay.ID);
 //        retVal.add(Prefire.ID);
 //        retVal.add(PhotonBlaster.ID);
 //        retVal.add(OlReliable.ID);
-        retVal.add(ExtraShot.ID);
-        retVal.add(JunkDrawer.ID);
-        retVal.add(Volley.ID);
-        retVal.add(MoreOptions.ID);
-        retVal.add(ChamberSpin.ID);
-        retVal.add(LetEmFly.ID);
+//        retVal.add(ExtraShot.ID);
+//        retVal.add(JunkDrawer.ID);
+//        retVal.add(Volley.ID);
+//        retVal.add(MoreOptions.ID);
+//        retVal.add(ChamberSpin.ID);
+//        retVal.add(LetEmFly.ID);
+        retVal.add(MagDump.ID);
 
         return retVal;
     }

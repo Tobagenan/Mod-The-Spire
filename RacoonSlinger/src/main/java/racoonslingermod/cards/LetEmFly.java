@@ -2,7 +2,6 @@ package racoonslingermod.cards;
 
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.actions.defect.EvokeOrbAction;
-import com.megacrit.cardcrawl.actions.defect.RedoAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -25,9 +24,6 @@ public class LetEmFly extends BaseCard {
 
     public LetEmFly() {
         super(ID, info);
-        this.baseDamage = 5;
-        this.baseMagicNumber = 1;
-        this.magicNumber = this.baseMagicNumber;
     }
 
     //Need to make it so it evokes all then channels lightning, then evokes all and rechannels orbs

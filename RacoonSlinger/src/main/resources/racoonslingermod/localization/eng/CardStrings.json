@@ -219,5 +219,9 @@
     "NAME": "Let Em Fly",
     "DESCRIPTION": "Fire all Bullets. NL Load 1 Bullet for each fired. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Fire all Bullets. NL Reload each Bullet. NL Exhaust."
+  },
+  "${modID}:MagDump": {
+    "NAME": "Mag Dump",
+    "DESCRIPTION": "Deal !D! damage to all enemies. NL Lose all Bullets."
   }
 }
