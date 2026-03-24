@@ -31,8 +31,10 @@ public class OpenFire extends BaseCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new AnimateOrbAction(this.baseMagicNumber));
-        this.addToBot(new EvokeOrbAction(this.baseMagicNumber));
+        for (int i = 0; i < this.magicNumber; i++) {
+            this.addToBot(new AnimateOrbAction(1));
+            this.addToBot(new EvokeOrbAction(1));
+        }
     }
 
     public void upgrade() {
