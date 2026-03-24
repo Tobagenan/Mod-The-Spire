@@ -18,12 +18,13 @@ public class LetEmFly extends BaseCard {
             MyCharacter.Meta.CARD_COLOR,
             CardType.SKILL,
             CardRarity.RARE,
-            CardTarget.ENEMY,
+            CardTarget.ALL_ENEMY,
             2
     );
 
     public LetEmFly() {
         super(ID, info);
+        this.exhaust = true;
     }
 
     //Need to make it so it evokes all then channels lightning, then evokes all and rechannels orbs

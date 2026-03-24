@@ -65,7 +65,7 @@
   },
   "${modID}:QuickStrike": {
     "NAME": "Quick Strike",
-    "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, apply !M! Weak."
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Frail."
   },
   "${modID}:Desperado": {
     "NAME": "Desperado",
@@ -154,7 +154,7 @@
   },
   "${modID}:Disarm": {
     "NAME": "Disarm",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Frail."
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, apply !M! Weak."
   },
   "${modID}:HotPotato": {
     "NAME": "Hot Potato",

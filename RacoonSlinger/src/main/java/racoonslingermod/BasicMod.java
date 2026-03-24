@@ -3,6 +3,7 @@ package racoonslingermod;
 import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.interfaces.*;
+import com.badlogic.gdx.graphics.Color;
 import racoonslingermod.cards.BaseCard;
 import racoonslingermod.character.MyCharacter;
 import racoonslingermod.util.GeneralUtils;
@@ -25,6 +26,7 @@ import com.megacrit.cardcrawl.localization.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.scannotation.AnnotationDB;
+import racoonslingermod.character.MyCharacter;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
@@ -166,6 +168,7 @@ public class BasicMod implements
     public void receiveEditCharacters() {
         MyCharacter.Meta.registerCharacter();
     }
+
 
     @Override
     public void receiveAddAudio() {
