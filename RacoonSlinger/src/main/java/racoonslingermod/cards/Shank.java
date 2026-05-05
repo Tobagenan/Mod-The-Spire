@@ -8,9 +8,12 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import racoonslingermod.character.MyCharacter;
+//import racoonslingermod.util.BladeCard;
+import racoonslingermod.util.MyTags;
 import racoonslingermod.util.CardStats;
 
 public class Shank extends BaseCard {
+    //implements BladeCard
     public static final String ID = makeID(racoonslingermod.cards.Shank.class.getSimpleName());
     private static final CardStats info = new CardStats(
             MyCharacter.Meta.CARD_COLOR,
@@ -25,11 +28,12 @@ public class Shank extends BaseCard {
         this.baseDamage = 3;
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
+        this.tags.add(MyTags.BLADE);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
 
-        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.NONE));
+        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         this.addToBot(new GashAction(this, this.magicNumber));
     }
 

@@ -153,7 +153,7 @@ public class MyCharacter extends CustomPlayer {
 //        retVal.add(WeakSpot.ID);
 //        retVal.add(Collateral.ID);
 //        retVal.add(Slash.ID);
-//        retVal.add(Shank.ID);
+        retVal.add(Shank.ID);
 //        retVal.add(Overheat.ID);
 //        retVal.add(Chug.ID);
 //        retVal.add(RigtheDeck.ID);
@@ -192,7 +192,8 @@ public class MyCharacter extends CustomPlayer {
 //        retVal.add(MoreOptions.ID);
 //        retVal.add(ChamberSpin.ID);
 //        retVal.add(LetEmFly.ID);
-        retVal.add(MagDump.ID);
+//        retVal.add(MagDump.ID);
+        retVal.add(SliceandDice.ID);
 
         return retVal;
     }

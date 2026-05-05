@@ -223,5 +223,9 @@
   "${modID}:MagDump": {
     "NAME": "Mag Dump",
     "DESCRIPTION": "Deal !D! damage to all enemies. NL Lose all Bullets."
+  },
+  "${modID}:SliceandDice": {
+    "NAME": "Slice and Dice",
+    "DESCRIPTION": "Gain 1 [E] for every slash type move used."
   }
 }

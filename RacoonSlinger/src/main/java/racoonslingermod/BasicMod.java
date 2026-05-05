@@ -3,7 +3,6 @@ package racoonslingermod;
 import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.interfaces.*;
-import com.badlogic.gdx.graphics.Color;
 import racoonslingermod.cards.BaseCard;
 import racoonslingermod.character.MyCharacter;
 import racoonslingermod.util.GeneralUtils;
@@ -26,7 +25,6 @@ import com.megacrit.cardcrawl.localization.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.scannotation.AnnotationDB;
-import racoonslingermod.character.MyCharacter;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
@@ -286,9 +284,12 @@ public class BasicMod implements
 
     @Override
     public void receiveEditCards() { //somewhere in the class
+
         new AutoAdd(modID) //Loads files from this mod
                 .packageFilter(BaseCard.class) //In the same package as this class
                 .setDefaultSeen(true) //And marks them as seen in the compendium
                 .cards(); //Adds the cards
     }
+
+
 }
