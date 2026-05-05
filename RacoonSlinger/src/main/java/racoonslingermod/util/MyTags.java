@@ -6,6 +6,9 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 public class MyTags {
     @SpireEnum
     public static AbstractCard.CardTags BLADE;
+
+    @SpireEnum
+    public static AbstractCard.CardTags LOAD;
 }
 
 

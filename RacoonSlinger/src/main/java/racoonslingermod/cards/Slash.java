@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import racoonslingermod.character.MyCharacter;
 import racoonslingermod.util.CardStats;
+import racoonslingermod.util.MyTags;
 
 public class Slash extends BaseCard {
     public static final String ID = makeID(Slash.class.getSimpleName());
@@ -24,6 +25,7 @@ public class Slash extends BaseCard {
     public Slash() {
         super(ID, info);
         setDamage(DAMAGE, UPG_DAMAGE);
+        this.tags.add(MyTags.BLADE);
     }
 
     @Override

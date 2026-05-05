@@ -44,7 +44,7 @@
   },
   "${modID}:Shank": {
     "NAME": "Shank",
-    "DESCRIPTION": "Deal !D! damage. NL Increase the damage of ALL Claw cards by !M! this combat."
+    "DESCRIPTION": "Deal !D! damage. NL Increase the damage of ALL Shank cards by !M! this combat."
   },
   "${modID}:Overheat": {
     "NAME": "Overheat",
@@ -175,12 +175,12 @@
   },
   "${modID}:PowerPlay": {
     "NAME": "Power Play",
-    "DESCRIPTION": "Whenever you play a Power card, Channel !M! Bullet.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play a Power card, Channel !M! Bullet."
+    "DESCRIPTION": "Whenever you play a Power card, Load !M! Bullet.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play a Power card, Load !M! Bullet."
   },
   "${modID}:Prefire": {
     "NAME": "Prefire",
-    "DESCRIPTION": "At the start of your turn, trigger the passive ability of your next Orb."
+    "DESCRIPTION": "At the start of your turn, trigger the passive ability of your next Bullet."
   },
   "${modID}:PhotonBlaster": {
     "NAME": "Photon Blaster",
@@ -194,8 +194,8 @@
   },
   "${modID}:ExtraShot": {
     "NAME": "Extra Shot",
-    "DESCRIPTION": "This turn, your next Orb channelled is channelled twice.",
-    "UPGRADE_DESCRIPTION": "This turn, your next !M! Orbs channelled are channelled twice."
+    "DESCRIPTION": "This turn, your next Bullet Loaded is Loaded twice.",
+    "UPGRADE_DESCRIPTION": "This turn, your next !M! Bullets Loaded are Loaded twice."
   },
   "${modID}:JunkDrawer": {
     "NAME": "Junk Drawer",
@@ -213,7 +213,7 @@
   },
   "${modID}:ChamberSpin": {
     "NAME": "Chamber Spin",
-    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card for each unique Orb you have."
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card for each unique Bullet you have."
   },
   "${modID}:LetEmFly": {
     "NAME": "Let Em Fly",
@@ -226,6 +226,15 @@
   },
   "${modID}:SliceandDice": {
     "NAME": "Slice and Dice",
-    "DESCRIPTION": "Gain 1 [E] for every slash type move used."
+    "DESCRIPTION": "Gain 1 [E] for every Blade type move used."
+  },
+  "${modID}:PotofGreed": {
+    "NAME": "Pot of Greed",
+    "DESCRIPTION": "Draw !M! Load cards from the deck."
+  },
+  "${modID}:JudgementDay": {
+    "NAME": "Judgement Day",
+    "DESCRIPTION": "Ethereal. NL Shoot the next Bullet for Double Effect.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Shoot the next Bullet for Triple Effect."
   }
 }

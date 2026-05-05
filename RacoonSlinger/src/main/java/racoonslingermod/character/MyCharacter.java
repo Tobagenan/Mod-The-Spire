@@ -153,7 +153,7 @@ public class MyCharacter extends CustomPlayer {
 //        retVal.add(WeakSpot.ID);
 //        retVal.add(Collateral.ID);
 //        retVal.add(Slash.ID);
-        retVal.add(Shank.ID);
+//        retVal.add(Shank.ID);
 //        retVal.add(Overheat.ID);
 //        retVal.add(Chug.ID);
 //        retVal.add(RigtheDeck.ID);
@@ -166,7 +166,7 @@ public class MyCharacter extends CustomPlayer {
 //        retVal.add(Standoff.ID);
         retVal.add(Gamble.ID);
 //        retVal.add(Intimidate.ID);
-        retVal.add(TopOff.ID);
+//        retVal.add(TopOff.ID);
 //        retVal.add(ReflexFire.ID);
 //        retVal.add(Deadweight.ID);
 //        retVal.add(ItsHighNoon.ID);
@@ -193,7 +193,9 @@ public class MyCharacter extends CustomPlayer {
 //        retVal.add(ChamberSpin.ID);
 //        retVal.add(LetEmFly.ID);
 //        retVal.add(MagDump.ID);
-        retVal.add(SliceandDice.ID);
+//        retVal.add(SliceandDice.ID);
+//        retVal.add(PotofGreed.ID);
+        retVal.add(JudgementDay.ID);
 
         return retVal;
     }

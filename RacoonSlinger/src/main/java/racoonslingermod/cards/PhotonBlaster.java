@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.Plasma;
 import racoonslingermod.character.MyCharacter;
 import racoonslingermod.util.CardStats;
+import racoonslingermod.util.MyTags;
 
 public class PhotonBlaster extends BaseCard {
     public static final String ID = makeID(racoonslingermod.cards.PhotonBlaster.class.getSimpleName());
@@ -27,6 +28,7 @@ public class PhotonBlaster extends BaseCard {
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
+        this.tags.add(MyTags.LOAD);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

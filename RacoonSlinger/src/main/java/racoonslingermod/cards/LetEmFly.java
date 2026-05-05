@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.orbs.Lightning;
 import racoonslingermod.character.MyCharacter;
 import racoonslingermod.util.CardStats;
+import racoonslingermod.util.MyTags;
 
 import java.util.ArrayList;
 
@@ -25,6 +26,7 @@ public class LetEmFly extends BaseCard {
     public LetEmFly() {
         super(ID, info);
         this.exhaust = true;
+        this.tags.add(MyTags.LOAD);
     }
 
     //Need to make it so it evokes all then channels lightning, then evokes all and rechannels orbs

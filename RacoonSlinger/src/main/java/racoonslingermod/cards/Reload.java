@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.Lightning;
 import racoonslingermod.character.MyCharacter;
 import racoonslingermod.util.CardStats;
+import racoonslingermod.util.MyTags;
 
 public class Reload extends BaseCard {
 
@@ -25,6 +26,7 @@ public class Reload extends BaseCard {
             this.showEvokeOrbCount = 2;
             this.baseMagicNumber = 2;
             this.magicNumber = this.baseMagicNumber;
+            this.tags.add(MyTags.LOAD);
         }
 
 

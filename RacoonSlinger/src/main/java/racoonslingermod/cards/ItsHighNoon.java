@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.Lightning;
 import racoonslingermod.character.MyCharacter;
 import racoonslingermod.util.CardStats;
+import racoonslingermod.util.MyTags;
 
 public class ItsHighNoon extends BaseCard {
     public static final String ID = makeID(racoonslingermod.cards.ItsHighNoon.class.getSimpleName());
@@ -27,6 +28,7 @@ public class ItsHighNoon extends BaseCard {
         this.showEvokeOrbCount = 3;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
+        this.tags.add(MyTags.LOAD);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

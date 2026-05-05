@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.VerticalAuraEffect;
 import racoonslingermod.character.MyCharacter;
 import racoonslingermod.util.CardStats;
+import racoonslingermod.util.MyTags;
 
 public class Desperado extends BaseCard {
     public static final String ID = makeID(racoonslingermod.cards.Desperado.class.getSimpleName());
@@ -28,6 +29,7 @@ public class Desperado extends BaseCard {
         this.baseDamage = 10;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
+        this.tags.add(MyTags.BLADE);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {

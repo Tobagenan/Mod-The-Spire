@@ -1,46 +1,43 @@
 package racoonslingermod.cards;
 
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.Frost;
+import racoonslingermod.actions.DrawTaggedCardsAction;
 import racoonslingermod.character.MyCharacter;
 import racoonslingermod.util.CardStats;
 import racoonslingermod.util.MyTags;
 
-public class QuickSnap extends BaseCard {
-    public static final String ID = makeID(racoonslingermod.cards.QuickSnap.class.getSimpleName());
+public class PotofGreed extends BaseCard{
+
+    public static final String ID = makeID(racoonslingermod.cards.PotofGreed.class.getSimpleName());
+
     private static final CardStats info = new CardStats(
             MyCharacter.Meta.CARD_COLOR,
-            CardType.ATTACK,
-            CardRarity.COMMON,
-            CardTarget.ENEMY,
-            1
+            CardType.SKILL,
+            CardRarity.UNCOMMON,
+            CardTarget.SELF,
+            2
     );
 
-    public QuickSnap() {
-        super(ID,info);
-        this.baseDamage = 6;
+    public PotofGreed() {
+        super(ID, info);
+        this.exhaust = true;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
-        this.tags.add(MyTags.BLADE);
     }
+
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ChannelAction(new Frost()));
+        this.addToBot(new DrawTaggedCardsAction(p, this.magicNumber, MyTags.LOAD));
     }
 
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(3);
+            this.upgradeBaseCost(0);
         }
     }
 
     @Override
-    public AbstractCard makeCopy() { //Optional
-        return new QuickSnap();
-    }
-
-
+    public AbstractCard makeCopy() {return new PotofGreed();}
 }

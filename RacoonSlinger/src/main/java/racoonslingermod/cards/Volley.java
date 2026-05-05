@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.orbs.Lightning;
 import com.megacrit.cardcrawl.powers.ElectroPower;
 import racoonslingermod.character.MyCharacter;
 import racoonslingermod.util.CardStats;
+import racoonslingermod.util.MyTags;
 
 public class Volley extends BaseCard {
     public static final String ID = makeID(racoonslingermod.cards.Volley.class.getSimpleName());
@@ -25,6 +26,7 @@ public class Volley extends BaseCard {
         super(ID, info);
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
+        this.tags.add(MyTags.LOAD);
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
