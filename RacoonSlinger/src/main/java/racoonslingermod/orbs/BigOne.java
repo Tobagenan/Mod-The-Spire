@@ -1,7 +1,6 @@
 package racoonslingermod.orbs;
 
 import basemod.abstracts.CustomOrb;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
