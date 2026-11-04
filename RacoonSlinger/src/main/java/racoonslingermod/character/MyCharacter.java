@@ -146,8 +146,8 @@ public class MyCharacter extends CustomPlayer {
 //        retVal.add(Defend.ID);
 //        retVal.add(Defend.ID);
         retVal.add(Defend.ID);
-        retVal.add(FastHand.ID);
-        retVal.add(Reload.ID);
+//        retVal.add(FastHand.ID);
+//        retVal.add(Reload.ID);
         //extra
 //        retVal.add(OpenFire.ID);
 //        retVal.add(WeakSpot.ID);
@@ -195,7 +195,10 @@ public class MyCharacter extends CustomPlayer {
 //        retVal.add(MagDump.ID);
 //        retVal.add(SliceandDice.ID);
 //        retVal.add(PotofGreed.ID);
-        retVal.add(JudgementDay.ID);
+//        retVal.add(JudgementDay.ID);
+//        retVal.add(Lumina.ID);
+        retVal.add(TheBigOne.ID);
+
 
         return retVal;
     }

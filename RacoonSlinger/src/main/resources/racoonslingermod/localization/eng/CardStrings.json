@@ -236,5 +236,20 @@
     "NAME": "Judgement Day",
     "DESCRIPTION": "Ethereal. NL Shoot the next Bullet for Double Effect.",
     "UPGRADE_DESCRIPTION": "Ethereal. NL Shoot the next Bullet for Triple Effect."
+  },
+  "${modID}:Lumina": {
+    "NAME": "Lumina",
+    "DESCRIPTION": "At the end of combat, NL heal !M! HP"
+  },
+  "${modID}:SlowRoller": {
+    "NAME": "Slow Roller",
+    "DESCRIPTION": "Load a scaling bullet",
+    "UPGRADE_DESCRIPTION": "Load a scaling bullet. NL Trigger all scaling bullets"
+  },
+  "${modID}:TheBigOne": {
+    "NAME": "The Big One",
+    "DESCRIPTION": "Loads a big Bullet, NL Increase its damage permanently by !M!, NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Loads a big Bullet, NL Increase its damage permanently by !M!, NL Exhaust"
   }
+
 }
