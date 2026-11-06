@@ -248,8 +248,15 @@
   },
   "${modID}:TheBigOne": {
     "NAME": "The Big One",
-    "DESCRIPTION": "Loads a big Bullet, NL Increase its damage permanently by !M!, NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Loads a big Bullet, NL Increase its damage permanently by !M!, NL Exhaust"
+    "DESCRIPTION": "Loads a big Bullet, NL Increase its damage permanently by !M!, NL Exhaust"
+  },
+  "${modID}:BlastBurn": {
+    "NAME": "Blast Burn",
+    "DESCRIPTION": "Loads a fire Bullet, NL Deals !D! and applies !M! poison when evoked"
+  },
+  "${modID}:FrostFlash": {
+    "NAME": "Frost Flash",
+    "DESCRIPTION": "Loads a icy Bullet, NL Deals !D! and applies !M! strength when evoked"
   }
 
 }

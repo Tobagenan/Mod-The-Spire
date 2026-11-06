@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StaticDischargePower;
 import racoonslingermod.character.MyCharacter;
+import racoonslingermod.powers.RebuttalPower;
 import racoonslingermod.util.CardStats;
 
 public class Rebuttal extends BaseCard {
@@ -26,7 +27,7 @@ public class Rebuttal extends BaseCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(p, p, new StaticDischargePower(p, this.magicNumber), this.magicNumber));
+        this.addToBot(new ApplyPowerAction(p, p, new RebuttalPower(p, this.magicNumber), this.magicNumber));
     }
 
     public void upgrade() {

@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.Lightning;
 import racoonslingermod.character.MyCharacter;
+import racoonslingermod.orbs.BasicB;
 import racoonslingermod.util.CardStats;
 import racoonslingermod.util.MyTags;
 
@@ -41,7 +42,7 @@ public class ItsHighNoon extends BaseCard {
         }
 
         for(int i = 0; i < count * this.magicNumber; ++i) {
-            this.addToBot(new ChannelAction(new Lightning() ));
+            this.addToBot(new ChannelAction(new BasicB() ));
         }
     }
 
