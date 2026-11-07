@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StormPower;
 import racoonslingermod.character.MyCharacter;
+import racoonslingermod.powers.PowerPlayPower;
 import racoonslingermod.util.CardStats;
 
 public class PowerPlay extends BaseCard {
@@ -28,7 +29,7 @@ public class PowerPlay extends BaseCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
         //currently uses stormpower action, I want to replace this with orb loading power class
-        this.addToBot(new ApplyPowerAction(p, p, new StormPower(p, this.magicNumber), this.magicNumber));
+        this.addToBot(new ApplyPowerAction(p, p, new PowerPlayPower(p, this.magicNumber), this.magicNumber));
     }
 //    THIS is the function storm uses not too bad would need to replace just the new lightning()
 //    can change it to channel random, can change it once have different names for the bullets
