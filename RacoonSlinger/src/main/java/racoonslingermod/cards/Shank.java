@@ -8,7 +8,6 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import racoonslingermod.character.MyCharacter;
-//import racoonslingermod.util.BladeCard;
 import racoonslingermod.util.MyTags;
 import racoonslingermod.util.CardStats;
 
@@ -39,10 +38,11 @@ public class Shank extends BaseCard {
 
     public void upgrade() {
         if (!this.upgraded) {
-            this.upgradeName();
             this.upgradeDamage(2);
+            this.upgradeName();
         }
     }
+
     @Override
     public AbstractCard makeCopy() { //Optional
         return new Shank();

@@ -19,12 +19,10 @@ public class Slash extends BaseCard {
             CardTarget.ENEMY,
             0
     );
-    private static final int DAMAGE = 6;
-    private static final int UPG_DAMAGE = 3;
 
     public Slash() {
         super(ID, info);
-        setDamage(DAMAGE, UPG_DAMAGE);
+        this.baseDamage = 6;
         this.tags.add(MyTags.BLADE);
     }
 
@@ -32,6 +30,14 @@ public class Slash extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
     }
+
+    public void upgrade() {
+        if (!this.upgraded) {
+            this.upgradeName();
+            this.upgradeDamage(3);
+        }
+    }
+
     @Override
     public AbstractCard makeCopy() { //Optional
         return new Slash();

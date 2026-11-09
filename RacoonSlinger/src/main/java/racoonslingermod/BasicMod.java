@@ -5,10 +5,7 @@ import basemod.BaseMod;
 import basemod.interfaces.*;
 import racoonslingermod.cards.BaseCard;
 import racoonslingermod.character.MyCharacter;
-import racoonslingermod.util.GeneralUtils;
-import racoonslingermod.util.KeywordInfo;
-import racoonslingermod.util.Sounds;
-import racoonslingermod.util.TextureLoader;
+import racoonslingermod.util.*;
 import com.badlogic.gdx.Files;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.lwjgl.LwjglFileHandle;
@@ -60,6 +57,8 @@ public class BasicMod implements
 
     public BasicMod() {
         BaseMod.subscribe(this); //This will make BaseMod trigger all the subscribers at their appropriate times.
+        BaseMod.subscribe(new BladeTracker());
+
         logger.info(modID + " subscribed to BaseMod.");
     }
 

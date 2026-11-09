@@ -270,6 +270,18 @@
   "${modID}:Smokescreen": {
     "NAME": "Smokescreen",
     "DESCRIPTION": "Loads a Stun Bullet"
+  },
+  "${modID}:BladeBarrage": {
+    "NAME": "Blade Barrage",
+    "DESCRIPTION": "Deals !D! for each Blade card used this combat"
+  },
+  "${modID}:RampUp": {
+    "NAME": "Ramp Up",
+    "DESCRIPTION": "Gain Strength equal to the number of Blade cards used this combat"
+  },
+  "${modID}:MegaSlash": {
+    "NAME": "Mega Slash",
+    "DESCRIPTION": "Deals !D! damage. NL Add a 0 [E] copy of this card into your Discard"
   }
 
 }
