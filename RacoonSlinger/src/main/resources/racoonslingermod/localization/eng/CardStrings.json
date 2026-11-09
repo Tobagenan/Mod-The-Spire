@@ -256,7 +256,20 @@
   },
   "${modID}:FrostFlash": {
     "NAME": "Frost Flash",
-    "DESCRIPTION": "Loads a icy Bullet, NL Deals !D! and applies !M! strength when evoked"
+    "DESCRIPTION": "Loads a icy Bullet, NL Deals !D! and applies -!M! strength when evoked"
+  },
+  "${modID}:ThisllDo": {
+    "NAME": "This'll Do",
+    "DESCRIPTION": "Loads a random bullet",
+    "UPGRADE_DESCRIPTION": "Loads !M! random bullets"
+  },
+  "${modID}:Blank": {
+    "NAME": "Blank",
+    "DESCRIPTION": "Loads a Blank Bullet"
+  },
+  "${modID}:Smokescreen": {
+    "NAME": "Smokescreen",
+    "DESCRIPTION": "Loads a Stun Bullet"
   }
 
 }

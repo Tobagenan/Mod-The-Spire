@@ -19,6 +19,9 @@ public class FFlash extends CustomOrb {
 
     private int strengthReduction;
 
+    public FFlash(){
+        this(3,1);
+    }
     public FFlash(int damage, int strengthReduction) {
         super(ID, "Frostflash",
                 damage, damage,

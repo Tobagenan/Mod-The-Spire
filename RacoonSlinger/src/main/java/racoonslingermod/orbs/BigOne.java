@@ -13,10 +13,13 @@ import static racoonslingermod.BasicMod.makeID;
 
 public class BigOne extends CustomOrb {
 
-
+    int damage = 3;
 
     public static final String ID = makeID(BigOne.class.getSimpleName());
 
+    public BigOne(){
+        this(10);
+    }
     public BigOne(int damage) {
         super(ID, "The Big One",
                 damage, damage,

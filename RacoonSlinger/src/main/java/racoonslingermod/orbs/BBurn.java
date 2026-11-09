@@ -19,6 +19,9 @@ public class BBurn extends CustomOrb {
 
     private int poisonAmount;
 
+    public BBurn(){
+        this(3,3);
+    }
     public BBurn(int damage, int poison) {
         super(ID, "Blast Burn",
                 damage, damage,
