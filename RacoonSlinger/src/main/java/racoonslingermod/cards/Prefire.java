@@ -4,8 +4,10 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.LoopPower;
+import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import racoonslingermod.character.MyCharacter;
+import racoonslingermod.orbs.ManualPassive;
+import racoonslingermod.powers.PrefirePower;
 import racoonslingermod.util.CardStats;
 
 public class Prefire extends BaseCard {
@@ -25,8 +27,24 @@ public class Prefire extends BaseCard {
         this.magicNumber = this.baseMagicNumber;
     }
 
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(p, p, new LoopPower(p, this.magicNumber), this.magicNumber));
+        addToBot(new ApplyPowerAction(
+                p,
+                p,
+                new PrefirePower(p, this.magicNumber),
+                this.magicNumber
+        ));
+    }
+
+    public void triggerOrbPassive(AbstractPlayer p) {
+        if (p.orbs.isEmpty()) return;
+
+        AbstractOrb orb = p.orbs.get(0);
+
+        if (orb instanceof ManualPassive) {
+            ((ManualPassive) orb).triggerPassive();
+        }
     }
 
 //    Function that calls the loop

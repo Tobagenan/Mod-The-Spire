@@ -9,7 +9,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import racoonslingermod.character.MyCharacter;
 import racoonslingermod.util.CardStats;
 import racoonslingermod.util.MyTags;
-import racoonslingermod.powers.BladeCounterPower;
+import racoonslingermod.util.BladeTracker;
 
 public class BladeBarrage extends BaseCard {
     public static final String ID = makeID(BladeBarrage.class.getSimpleName());
@@ -30,11 +30,7 @@ public class BladeBarrage extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int bladeCount = 0;
-
-        if (p.hasPower(BladeCounterPower.POWER_ID)) {
-            bladeCount = p.getPower(BladeCounterPower.POWER_ID).amount;
-        }
+        int bladeCount = BladeTracker.bladeCount;
 
         int totalDamage = this.damage * bladeCount;
 

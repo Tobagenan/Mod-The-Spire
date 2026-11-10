@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.powers.FocusPower;
 
 import static racoonslingermod.BasicMod.makeID;
 
-public class StunB extends CustomOrb {
+public class StunB extends CustomOrb implements ManualPassive{
 
     public static final String ID = makeID(StunB.class.getSimpleName());
 
@@ -41,6 +41,21 @@ public class StunB extends CustomOrb {
                     )
             );
         }
+    }
+
+    public void triggerPassive() {
+        AbstractMonster target = AbstractDungeon.getRandomMonster();
+
+        if (target != null) return;
+
+        AbstractDungeon.actionManager.addToBottom(
+                new ApplyPowerAction(
+                        target,
+                        AbstractDungeon.player,
+                        new StunMonsterPower(target, 1),
+                        this.evokeAmount
+                )
+        );
     }
 
     @Override

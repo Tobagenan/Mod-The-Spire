@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.powers.FocusPower;
 
 import static racoonslingermod.BasicMod.makeID;
 
-public class BasicB extends CustomOrb {
+public class BasicB extends CustomOrb implements ManualPassive{
 
     public static final String ID = makeID(BasicB.class.getSimpleName());
 
@@ -30,6 +30,23 @@ public class BasicB extends CustomOrb {
 
     @Override
     public void onEvoke() {
+        AbstractMonster target = AbstractDungeon.getRandomMonster();
+
+        if (target == null) return;
+
+        AbstractDungeon.actionManager.addToBottom(
+                new DamageAction(
+                        target,
+                        new DamageInfo(
+                                AbstractDungeon.player,
+                                this.evokeAmount,
+                                DamageInfo.DamageType.NORMAL
+                        )
+                )
+        );
+    }
+
+    public void triggerPassive() {
         AbstractMonster target = AbstractDungeon.getRandomMonster();
 
         if (target == null) return;

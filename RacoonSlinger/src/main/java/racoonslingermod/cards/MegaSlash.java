@@ -38,7 +38,7 @@ public class MegaSlash extends BaseCard {
         ));
 
         MegaSlash copy = new MegaSlash();
-        copy.setCostForTurn(0);
+        copy.updateCost(-2);
 
         addToBot(new MakeTempCardInDiscardAction(copy, 1));
     }
@@ -46,7 +46,7 @@ public class MegaSlash extends BaseCard {
     @Override
     public void upgrade() {
         if (!this.upgraded) {
-            this.upgradeDamage(35);
+            this.upgradeDamage(7);
             this.upgradeName();
         }
     }

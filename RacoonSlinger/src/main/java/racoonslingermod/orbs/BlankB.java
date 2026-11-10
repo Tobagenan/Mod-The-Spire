@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.powers.WeakPower;
 
 import static racoonslingermod.BasicMod.makeID;
 
-public class BlankB extends CustomOrb {
+public class BlankB extends CustomOrb implements ManualPassive{
     public static final String ID = makeID(BlankB.class.getSimpleName());
 
     public BlankB() {
@@ -29,6 +29,31 @@ public class BlankB extends CustomOrb {
 
     @Override
     public void onEvoke() {
+        AbstractMonster target = AbstractDungeon.getRandomMonster();
+
+        if (target == null) return;
+
+
+        AbstractDungeon.actionManager.addToBottom(
+                new ApplyPowerAction(
+                        target,
+                        AbstractDungeon.player,
+                        new WeakPower(target, this.evokeAmount, false),
+                        this.evokeAmount
+                )
+        );
+
+        AbstractDungeon.actionManager.addToBottom(
+                new ApplyPowerAction(
+                        target,
+                        AbstractDungeon.player,
+                        new FrailPower(target, this.evokeAmount, false),
+                        this.evokeAmount
+                )
+        );
+    }
+
+    public void triggerPassive() {
         AbstractMonster target = AbstractDungeon.getRandomMonster();
 
         if (target == null) return;

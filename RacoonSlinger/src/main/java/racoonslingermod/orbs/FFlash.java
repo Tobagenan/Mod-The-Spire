@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 
 import static racoonslingermod.BasicMod.makeID;
 
-public class FFlash extends CustomOrb {
+public class FFlash extends CustomOrb implements ManualPassive{
 
     public static final String ID = makeID(FFlash.class.getSimpleName());
 
@@ -71,6 +71,36 @@ public class FFlash extends CustomOrb {
                         this.strengthReduction
                 )
         );
+    }
+
+    public void triggerPassive() {
+        AbstractMonster target = AbstractDungeon.getRandomMonster();
+
+        if (target == null) return;
+
+        AbstractDungeon.actionManager.addToBottom(
+                new DamageAction(
+                        target,
+                        new DamageInfo(
+                                AbstractDungeon.player,
+                                this.evokeAmount,
+                                DamageInfo.DamageType.NORMAL
+                        )
+                )
+        );
+
+        AbstractDungeon.actionManager.addToBottom(
+                new ApplyPowerAction(
+                        target,
+                        AbstractDungeon.player,
+                        new StrengthPower(
+                                target,
+                                this.strengthReduction
+                        ),
+                        this.strengthReduction
+                )
+        );
+
     }
 
     @Override

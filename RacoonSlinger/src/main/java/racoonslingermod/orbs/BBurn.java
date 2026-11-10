@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.powers.FocusPower;
 
 import static racoonslingermod.BasicMod.makeID;
 
-public class BBurn extends CustomOrb {
+public class BBurn extends CustomOrb implements ManualPassive{
 
     public static final String ID = makeID(BBurn.class.getSimpleName());
 
@@ -47,6 +47,36 @@ public class BBurn extends CustomOrb {
         if (target == null) return;
 
 //        int damage = Math.round(this.evokeAmount * 1.5f);
+
+        AbstractDungeon.actionManager.addToBottom(
+                new DamageAction(
+                        target,
+                        new DamageInfo(
+                                AbstractDungeon.player,
+                                this.evokeAmount,
+                                DamageInfo.DamageType.NORMAL
+                        )
+                )
+        );
+
+        AbstractDungeon.actionManager.addToBottom(
+                new ApplyPowerAction(
+                        target,
+                        AbstractDungeon.player,
+                        new PoisonPower(
+                                target,
+                                AbstractDungeon.player,
+                                this.poisonAmount
+                        ),
+                        this.poisonAmount
+                )
+        );
+    }
+
+    public void triggerPassive() {
+        AbstractMonster target = AbstractDungeon.getRandomMonster();
+
+        if (target == null) return;
 
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(

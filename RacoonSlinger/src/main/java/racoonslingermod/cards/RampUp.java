@@ -1,4 +1,3 @@
-
 package racoonslingermod.cards;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -8,7 +7,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import racoonslingermod.character.MyCharacter;
 import racoonslingermod.util.CardStats;
-import racoonslingermod.powers.BladeCounterPower;
+import racoonslingermod.util.BladeTracker;
 
 public class RampUp extends BaseCard {
     public static final String ID = makeID(RampUp.class.getSimpleName());
@@ -27,11 +26,7 @@ public class RampUp extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int bladeCount = 0;
-
-        if (p.hasPower(BladeCounterPower.POWER_ID)) {
-            bladeCount = p.getPower(BladeCounterPower.POWER_ID).amount;
-        }
+        int bladeCount = BladeTracker.bladeCount;
 
         if (bladeCount > 0) {
             addToBot(new ApplyPowerAction(

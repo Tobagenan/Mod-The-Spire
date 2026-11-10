@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.powers.LockOnPower;
 
 import static racoonslingermod.BasicMod.makeID;
 
-public class BigOne extends CustomOrb {
+public class BigOne extends CustomOrb implements ManualPassive{
 
     int damage = 3;
 
@@ -35,6 +35,29 @@ public class BigOne extends CustomOrb {
 
     @Override
     public void onEvoke() {
+        AbstractMonster target = AbstractDungeon.getRandomMonster();
+
+        if (target == null) return;
+
+        float damage = this.evokeAmount;
+
+        if (target.hasPower(LockOnPower.POWER_ID)) {
+            damage *= 1.5f;
+        }
+
+        AbstractDungeon.actionManager.addToBottom(
+                new DamageAction(
+                        target,
+                        new DamageInfo(
+                                AbstractDungeon.player,
+                                Math.round(damage),
+                                DamageInfo.DamageType.NORMAL
+                        )
+                )
+        );
+    }
+
+    public void triggerPassive() {
         AbstractMonster target = AbstractDungeon.getRandomMonster();
 
         if (target == null) return;
