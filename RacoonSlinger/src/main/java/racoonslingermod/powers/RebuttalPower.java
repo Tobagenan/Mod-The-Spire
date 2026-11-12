@@ -19,7 +19,7 @@ public class RebuttalPower extends AbstractPower {
         this.amount = orbAmount;
 
         this.updateDescription();
-        this.loadRegion("static_discharge");
+        this.loadRegion("static_discharge"); //needs to be replaced with custom icon
     }
 
     @Override

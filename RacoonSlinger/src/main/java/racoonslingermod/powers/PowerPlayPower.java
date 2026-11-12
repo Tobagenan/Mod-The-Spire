@@ -18,7 +18,7 @@ public class PowerPlayPower extends AbstractPower {
         this.owner = owner;
         this.amount = amount;
         this.updateDescription();
-        this.loadRegion("storm");
+        this.loadRegion("storm"); //needs to be replaced with custom icon
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {

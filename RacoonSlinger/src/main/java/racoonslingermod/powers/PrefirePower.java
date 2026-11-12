@@ -18,7 +18,7 @@ public class PrefirePower extends AbstractPower {
         this.type = PowerType.BUFF;
         this.isTurnBased = false;
 
-        loadRegion("loop");
+        loadRegion("loop"); //needs to be replaced with custom icon
         updateDescription();
     }
 

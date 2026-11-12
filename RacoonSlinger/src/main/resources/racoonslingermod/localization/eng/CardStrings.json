@@ -282,6 +282,20 @@
   "${modID}:MegaSlash": {
     "NAME": "Mega Slash",
     "DESCRIPTION": "Deals !D! damage. NL Add a 0 [E] copy of this card into your Discard"
+  },
+  "${modID}:FootAhead": {
+    "NAME": "Foot Ahead",
+    "DESCRIPTION": "At the start of your turn load a piercing bullet",
+    "UPGRADE_DESCRIPTION": "At the start of your turn load a piercing bullet. NL Loads a piercing bullet."
+  },
+  "${modID}:RallyUp": {
+    "NAME": "Rally Up",
+    "DESCRIPTION": "Load a bullet for every bullet loaded. NL Ethereal",
+    "UPGRADE_DESCRIPTION": "Load a bullet for every bullet loaded."
+  },
+  "${modID}:LootThatBody": {
+    "NAME": "Loot That Body",
+    "DESCRIPTION": "At the end of combat, gain !M! Gold."
   }
 
 }

@@ -58,6 +58,7 @@ public class BasicMod implements
     public BasicMod() {
         BaseMod.subscribe(this); //This will make BaseMod trigger all the subscribers at their appropriate times.
         BaseMod.subscribe(new BladeTracker());
+        BaseMod.subscribe(new LoadTracker());
 
         logger.info(modID + " subscribed to BaseMod.");
     }

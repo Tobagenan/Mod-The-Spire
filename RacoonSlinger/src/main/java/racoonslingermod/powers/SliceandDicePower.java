@@ -19,7 +19,7 @@ public class SliceandDicePower extends AbstractPower {
         this.amount = amount;
         this.type = PowerType.BUFF;
 
-        this.loadRegion("accuracy");
+        this.loadRegion("accuracy"); //needs to be replaced with custom icon
 
         updateDescription();
     }

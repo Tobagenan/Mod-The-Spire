@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.orbs.Lightning;
 import com.megacrit.cardcrawl.powers.ElectroPower;
 import racoonslingermod.character.MyCharacter;
+import racoonslingermod.orbs.BasicB;
 import racoonslingermod.util.CardStats;
 import racoonslingermod.util.MyTags;
 
@@ -35,7 +36,7 @@ public class Volley extends BaseCard {
         }
 
         for(int i = 0; i < this.magicNumber; ++i) {
-            AbstractOrb orb = new Lightning();
+            AbstractOrb orb = new BasicB();
             this.addToBot(new ChannelAction(orb));
         }
     }
