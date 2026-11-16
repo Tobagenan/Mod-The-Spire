@@ -1,6 +1,5 @@
 package racoonslingermod.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -30,26 +29,25 @@ public class Fester extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int enemyCount = AbstractDungeon.getMonsters().monsters.size();
+        int attackCount = 0;
 
-        for (int i = 0; i < enemyCount; i++) {
-            this.addToBot(new AbstractGameAction() {
-                @Override
-                public void update() {
-                    AbstractMonster target = AbstractDungeon.getMonsters().getRandomMonster();
+        for (AbstractCard card : p.hand.group) {
+            if (card.type == AbstractCard.CardType.ATTACK) {
+                attackCount++;
+            }
+        }
 
-                    if (target != null) {
-                        addToTop(new ApplyPowerAction(
-                                target,
-                                p,
-                                new VulnerablePower(target, magicNumber, false),
-                                magicNumber
-                        ));
-                    }
+        for (int i = 0; i < attackCount; i++) {
+            AbstractMonster target = AbstractDungeon.getMonsters().getRandomMonster();
 
-                    this.isDone = true;
-                }
-            });
+            if (target != null) {
+                this.addToBot(new ApplyPowerAction(
+                        target,
+                        p,
+                        new VulnerablePower(target, magicNumber, false),
+                        magicNumber
+                ));
+            }
         }
     }
 
@@ -57,6 +55,8 @@ public class Fester extends BaseCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
             this.exhaust = false;
         }
     }

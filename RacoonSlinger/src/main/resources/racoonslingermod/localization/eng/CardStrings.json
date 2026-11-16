@@ -296,6 +296,28 @@
   "${modID}:LootThatBody": {
     "NAME": "Loot That Body",
     "DESCRIPTION": "At the end of combat, gain !M! Gold."
+  },
+  "${modID}:CurtainFall": {
+    "NAME": "Curtain Fall",
+    "DESCRIPTION": "Retain. NL Evoke all orbs twice, Reduce cost every time this card is retained. NL Exhaust."
+  },
+  "${modID}:Fester": {
+    "NAME": "Fester",
+    "DESCRIPTION": "Apply vulnerable randomly for each attack in hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Apply vulnerable randomly for each attack in hand."
+  },
+  "${modID}:BreakFree": {
+    "NAME": "Break Free",
+    "DESCRIPTION": "Exhaust ALL your status cards. NL Deal !D! damage to a random enemy for each card exhausted."
+  },
+  "${modID}:WildWest": {
+    "NAME": "Wild West",
+    "DESCRIPTION": "Deal !D! for each card played this turn."
+  },
+  "${modID}:DeadorAlive": {
+    "NAME": "Dead or Alive",
+    "DESCRIPTION": "Exhaust all cards in hand. NL Invoke the next orb for each card Exhausted. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Exhaust any number cards in hand. NL Invoke the next orb for each card Exhausted. NL Exhaust."
   }
 
 }

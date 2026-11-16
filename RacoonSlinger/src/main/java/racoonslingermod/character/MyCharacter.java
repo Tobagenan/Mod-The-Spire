@@ -198,8 +198,8 @@ public class MyCharacter extends CustomPlayer {
 //        retVal.add(JudgementDay.ID);
 //        retVal.add(Lumina.ID);
 //        retVal.add(TheBigOne.ID);
-        retVal.add(BlastBurn.ID);
-        retVal.add(FrostFlash.ID);
+//        retVal.add(BlastBurn.ID);
+//        retVal.add(FrostFlash.ID);
 
 
         return retVal;

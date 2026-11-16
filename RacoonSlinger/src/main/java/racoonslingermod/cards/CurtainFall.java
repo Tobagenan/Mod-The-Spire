@@ -1,11 +1,16 @@
 package racoonslingermod.cards;
 
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.actions.defect.EvokeOrbAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import racoonslingermod.character.MyCharacter;
 import racoonslingermod.util.CardStats;
+
+import java.util.ArrayList;
 
 public class CurtainFall extends BaseCard {
     public static final String ID = makeID(CurtainFall.class.getSimpleName());
@@ -26,9 +31,28 @@ public class CurtainFall extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int orbCount = p.orbs.size();
+        ArrayList<AbstractOrb> savedOrbs = new ArrayList<>();
 
-        for (int i = 0; i < orbCount * 2; i++) {
+        for (AbstractOrb orb : p.orbs) {
+            if (orb != null) {
+                savedOrbs.add(orb.makeCopy());
+            }
+        }
+
+        int orbCount = savedOrbs.size();
+
+        // Evoke all original orbs.
+        for (int i = 0; i < orbCount; i++) {
+            this.addToBot(new EvokeOrbAction(1));
+        }
+
+        // Re-channel the saved orbs.
+        for (AbstractOrb orb : savedOrbs) {
+            this.addToBot(new ChannelAction(orb));
+        }
+
+        // Evoke the re-channeled orbs.
+        for (int i = 0; i < orbCount; i++) {
             this.addToBot(new EvokeOrbAction(1));
         }
     }

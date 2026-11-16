@@ -1,16 +1,20 @@
 package racoonslingermod.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import racoonslingermod.actions.CardSelectAction;
+import racoonslingermod.actions.RepeatOrbEvokeAction;
 import racoonslingermod.character.MyCharacter;
 import racoonslingermod.util.CardStats;
+import com.megacrit.cardcrawl.orbs.AbstractOrb;
+import java.util.List;
 
 import java.util.ArrayList;
+
+
 
 public class DeadorAlive extends BaseCard {
     public static final String ID = makeID(DeadorAlive.class.getSimpleName());
@@ -23,6 +27,8 @@ public class DeadorAlive extends BaseCard {
             2
     );
 
+    private AbstractOrb orbCopy;
+
     public DeadorAlive() {
         super(ID, info);
         this.exhaust = true;
@@ -30,34 +36,44 @@ public class DeadorAlive extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        ArrayList<AbstractCard> cardsToExhaust = new ArrayList<>(p.hand.group);
+        if (this.upgraded) {
+            AbstractOrb orbCopy = p.orbs.isEmpty()
+                    ? null
+                    :p.orbs.get(0).makeCopy();
 
-        int exhaustCount = cardsToExhaust.size();
-
-        AbstractOrb orb = null;
-
-        if (!p.orbs.isEmpty()) {
-            orb = p.orbs.get(p.orbs.size() - 1);
-        }
-
-        for (AbstractCard card : cardsToExhaust) {
-            this.addToBot(new ExhaustSpecificCardAction(card, p.hand));
-        }
-
-        if (orb != null) {
-            AbstractOrb savedOrb = orb;
-
-            this.addToBot(new AbstractGameAction() {
+            this.addToBot(new CardSelectAction() {
                 @Override
-                public void update() {
-                    for (int i = 0; i < exhaustCount; i++) {
-                        savedOrb.onEvoke();
-                    }
+                protected void handleSelectedCards(List<AbstractCard> cards) {
+                    super.handleSelectedCards(cards);
 
-                    p.evokeOrb();
-                    this.isDone = true;
+                    if (orbCopy != null && !cards.isEmpty()) {
+                        this.addToTop(new RepeatOrbEvokeAction(
+                                cards.size(),
+                                orbCopy
+                        ));
+                    }
                 }
             });
+
+        } else {
+            AbstractOrb orbCopy = null;
+
+            if (!p.orbs.isEmpty()) {
+                orbCopy = p.orbs.get(0).makeCopy();
+            }
+
+            ArrayList<AbstractCard> cardsToExhaust = new ArrayList<>(p.hand.group);
+
+            for (AbstractCard card : cardsToExhaust) {
+                this.addToBot(new ExhaustSpecificCardAction(card, p.hand));
+            }
+
+            if (orbCopy != null && !cardsToExhaust.isEmpty()) {
+                this.addToBot(new RepeatOrbEvokeAction(
+                        cardsToExhaust.size() - 1,
+                        orbCopy
+                ));
+            }
         }
     }
 
@@ -66,6 +82,8 @@ public class DeadorAlive extends BaseCard {
         if (!this.upgraded) {
             this.upgradeBaseCost(1);
             this.upgradeName();
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            this.initializeDescription();
         }
     }
 
