@@ -31,20 +31,6 @@ public class TakeCover extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new GainBlockAction(p,p, this.block));
 
-//        int orbCount = 0;
-//
-//        for(AbstractOrb o : AbstractDungeon.actionManager.orbsChanneledThisCombat) {
-//            ++orbCount;
-//        }
-
-//        this.baseBlock = orbCount * this.magicNumber;
-//        this.calculateCardDamage((AbstractMonster)null);
-
-//        if (Settings.FAST_MODE) {
-//            this.addToBot(new VFXAction(new BlizzardEffect(orbCount, AbstractDungeon.getMonsters().shouldFlipVfx()), 0.25F));
-//        } else {
-//            this.addToBot(new VFXAction(new BlizzardEffect(orbCount, AbstractDungeon.getMonsters().shouldFlipVfx()), 1.0F));
-//        }
     }
 
     public void applyPowers() {
@@ -72,8 +58,6 @@ public class TakeCover extends BaseCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(2);
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
-            this.initializeDescription();
         }
     }
 

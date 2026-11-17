@@ -36,8 +36,11 @@ public class ThisllDo extends BaseCard{
     }
 
 
-    public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ChannelAction(ThisllDo.getRandomCustomOrb(true)));
+    public void use(AbstractPlayer p, AbstractMonster m) { //need an upgrade section where it just calls again
+       for (int i = 0; i < magicNumber; i++) {
+           this.addToBot(new ChannelAction(ThisllDo.getRandomCustomOrb(true)));
+       }
+
     }
 
     public static AbstractOrb getRandomCustomOrb(boolean useCardRng) {

@@ -163,7 +163,7 @@
   "${modID}:TakeCover": {
     "NAME": "Take Cover",
     "DESCRIPTION": "Gain Block equal to !M! times the number of Bullets Loaded this combat.",
-    "UPGRADE_DESCRIPTION": "",
+
     "EXTENDED_DESCRIPTION": [
       " NL (Gain !B! Block.)",
       ""
@@ -277,7 +277,10 @@
   },
   "${modID}:RampUp": {
     "NAME": "Ramp Up",
-    "DESCRIPTION": "Gain Strength equal to the number of Blade cards used this combat"
+    "DESCRIPTION": "Gain Strength equal to the number of Blade cards used this combat",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Gain "
+      ]
   },
   "${modID}:MegaSlash": {
     "NAME": "Mega Slash",
@@ -312,7 +315,11 @@
   },
   "${modID}:WildWest": {
     "NAME": "Wild West",
-    "DESCRIPTION": "Deal !D! for each card played this turn."
+    "DESCRIPTION": "Deal damage for each card played this turn.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (",
+      " damage.)"
+    ]
   },
   "${modID}:DeadorAlive": {
     "NAME": "Dead or Alive",
@@ -333,7 +340,7 @@
   },
   "${modID}:Refresh": {
     "NAME": "Refresh",
-    "DESCRIPTION": "Whenever you play a Power, gain !M! Energy."
+    "DESCRIPTION": "Whenever you play a Power, gain 1 Energy."
   },
   "${modID}:AllIn": {
     "NAME": "All In",

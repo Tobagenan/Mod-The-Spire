@@ -38,6 +38,14 @@ public class Strike extends BaseCard {
     }
 
     @Override
+    public void upgrade() {
+        if (!this.upgraded) {
+            this.upgradeDamage(3);
+            this.upgradeName();
+        }
+    }
+
+    @Override
     public AbstractCard makeCopy() { //Optional
         return new Strike();
     }

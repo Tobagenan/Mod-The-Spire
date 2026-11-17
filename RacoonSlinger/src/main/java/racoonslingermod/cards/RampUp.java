@@ -3,11 +3,13 @@ package racoonslingermod.cards;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import racoonslingermod.character.MyCharacter;
 import racoonslingermod.util.CardStats;
 import racoonslingermod.util.BladeTracker;
+import racoonslingermod.util.MyTags;
 
 public class RampUp extends BaseCard {
     public static final String ID = makeID(RampUp.class.getSimpleName());
@@ -36,6 +38,29 @@ public class RampUp extends BaseCard {
                     bladeCount
             ));
         }
+    }
+
+    @Override
+    public void applyPowers() {
+        int bladeCount = 0;
+
+        for (AbstractCard c : AbstractDungeon.actionManager.cardsPlayedThisCombat) {
+            if (c.hasTag(MyTags.BLADE)) {
+                bladeCount++;
+            }
+        }
+
+        this.baseMagicNumber = bladeCount;
+
+        super.applyPowers();
+
+        this.rawDescription = cardStrings.DESCRIPTION;
+
+        if (bladeCount > 0) {
+            this.rawDescription += cardStrings.EXTENDED_DESCRIPTION[0] + bladeCount + " Strength.)";
+        }
+
+        this.initializeDescription();
     }
 
     @Override
