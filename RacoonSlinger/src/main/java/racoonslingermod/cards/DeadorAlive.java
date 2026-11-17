@@ -9,7 +9,6 @@ import racoonslingermod.actions.CardSelectAction;
 import racoonslingermod.actions.RepeatOrbEvokeAction;
 import racoonslingermod.character.MyCharacter;
 import racoonslingermod.util.CardStats;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import java.util.List;
 
 import java.util.ArrayList;

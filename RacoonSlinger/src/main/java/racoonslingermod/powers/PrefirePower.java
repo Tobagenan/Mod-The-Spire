@@ -1,14 +1,23 @@
 package racoonslingermod.powers;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import racoonslingermod.orbs.ManualPassive;
 
+import static racoonslingermod.BasicMod.makeID;
+
 public class PrefirePower extends AbstractPower {
 
-    public static final String POWER_ID = "RacoonslingerMod:Prefire";
+    public static final String POWER_ID = makeID(PrefirePower.class.getSimpleName());
+
+    private static final PowerStrings powerStrings =
+            CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+    public static final String NAME = powerStrings.NAME;
+    public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
     public PrefirePower(com.megacrit.cardcrawl.core.AbstractCreature owner, int amount) {
         this.name = "Prefire";
@@ -46,6 +55,10 @@ public class PrefirePower extends AbstractPower {
 
     @Override
     public void updateDescription() {
-        this.description = "At the start of your turn, trigger the first orb's passive " + amount + " times.";
+        if (amount == 1) {
+            description = DESCRIPTIONS[0];
+        } else {
+            description = DESCRIPTIONS[1] + amount + DESCRIPTIONS[2];
+        }
     }
 }

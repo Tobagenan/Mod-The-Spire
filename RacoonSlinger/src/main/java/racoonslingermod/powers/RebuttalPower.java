@@ -5,12 +5,20 @@ import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import racoonslingermod.orbs.BasicB;
 
+import static racoonslingermod.BasicMod.makeID;
+
 public class RebuttalPower extends AbstractPower {
 
-    public static final String POWER_ID = "BasicBPower";
+    public static final String POWER_ID = makeID(RebuttalPower.class.getSimpleName());
+    private static final PowerStrings powerStrings =
+            CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+    public static final String NAME = powerStrings.NAME;
+    public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
     public RebuttalPower(AbstractCreature owner, int orbAmount) {
         this.name = "";
@@ -45,7 +53,10 @@ public class RebuttalPower extends AbstractPower {
 
     @Override
     public void updateDescription() {
-        this.description = "Channel " + this.amount
-                + " Basic B orb when attacked.";
+        if (amount == 1) {
+            description = DESCRIPTIONS[0];
+        } else {
+            description = DESCRIPTIONS[1] + amount + DESCRIPTIONS[2];
+        }
     }
 }

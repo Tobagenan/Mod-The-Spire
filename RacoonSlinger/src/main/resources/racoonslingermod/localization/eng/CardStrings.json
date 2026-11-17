@@ -318,6 +318,26 @@
     "NAME": "Dead or Alive",
     "DESCRIPTION": "Exhaust all cards in hand. NL Invoke the next orb for each card Exhausted. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Exhaust any number cards in hand. NL Invoke the next orb for each card Exhausted. NL Exhaust."
+  },
+  "${modID}:HogWild": {
+  "NAME": "Hog Wild",
+  "DESCRIPTION": "The first time you play a 0 [E] Attack each turn, return it to your Hand."
+  },
+  "${modID}:BouncingBullet": {
+    "NAME": "Bouncing Bullet",
+    "DESCRIPTION": "Evoke the next Bullet !M! times."
+  },
+  "${modID}:SpareShot": {
+    "NAME": "Spare Shot",
+    "DESCRIPTION": "Add a random Load card into your Hand. NLIt's free to play this turn. NL Exhaust"
+  },
+  "${modID}:Refresh": {
+    "NAME": "Refresh",
+    "DESCRIPTION": "Whenever you play a Power, gain !M! Energy."
+  },
+  "${modID}:AllIn": {
+    "NAME": "All In",
+    "DESCRIPTION": "Lose all Orb slots. Gain !M! Strength for each slot lost."
   }
 
 }

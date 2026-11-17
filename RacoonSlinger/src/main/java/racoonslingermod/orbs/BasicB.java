@@ -3,15 +3,17 @@ package racoonslingermod.orbs;
 
 import basemod.abstracts.CustomOrb;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.powers.FocusPower;
+import racoonslingermod.powers.PiercePower;
 
 import static racoonslingermod.BasicMod.makeID;
 
-public class BasicB extends CustomOrb implements ManualPassive{
+public class BasicB extends CustomOrb implements ManualPassive {
 
     public static final String ID = makeID(BasicB.class.getSimpleName());
 
@@ -21,6 +23,7 @@ public class BasicB extends CustomOrb implements ManualPassive{
                 "No passive effect",
                 "Deals damage when evoked"
         );
+        applyFocus();
     }
 
     @Override
@@ -28,49 +31,62 @@ public class BasicB extends CustomOrb implements ManualPassive{
         this.description = "Deals " + this.evokeAmount + " damage when evoked.";
     }
 
-    @Override
-    public void onEvoke() {
-        AbstractMonster target = AbstractDungeon.getRandomMonster();
-
-        if (target == null) return;
-
-        AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(
-                        target,
-                        new DamageInfo(
-                                AbstractDungeon.player,
-                                this.evokeAmount,
-                                DamageInfo.DamageType.NORMAL
-                        )
-                )
-        );
+    private boolean hasPierce() {
+        return AbstractDungeon.player != null &&
+                AbstractDungeon.player.hasPower(PiercePower.POWER_ID);
     }
 
+    private void dealDamage() {
+        if (hasPierce()) {
+            for (AbstractMonster monster : AbstractDungeon.getMonsters().monsters) {
+                if (!monster.isDeadOrEscaped()) {
+                    AbstractDungeon.actionManager.addToBottom(
+                            new DamageAction(
+                                    monster,
+                                    new DamageInfo(
+                                            AbstractDungeon.player,
+                                            this.evokeAmount,
+                                            DamageInfo.DamageType.NORMAL
+                                    ),
+                                    AbstractGameAction.AttackEffect.SLASH_HORIZONTAL
+                            )
+                    );
+                }
+            }
+        } else {
+            AbstractMonster target = AbstractDungeon.getRandomMonster();
+
+            if (target == null) return;
+
+            AbstractDungeon.actionManager.addToBottom(
+                    new DamageAction(
+                            target,
+                            new DamageInfo(
+                                    AbstractDungeon.player,
+                                    this.evokeAmount,
+                                    DamageInfo.DamageType.NORMAL
+                            )
+                    )
+            );
+        }
+    }
+
+    @Override
+    public void onEvoke() {
+        dealDamage();
+    }
+
+    @Override
     public void triggerPassive() {
-        AbstractMonster target = AbstractDungeon.getRandomMonster();
-
-        if (target == null) return;
-
-        AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(
-                        target,
-                        new DamageInfo(
-                                AbstractDungeon.player,
-                                this.evokeAmount,
-                                DamageInfo.DamageType.NORMAL
-                        )
-                )
-        );
+        dealDamage();
     }
 
     @Override
     public void onStartOfTurn() {
-        // No passive effect
     }
 
     @Override
     public void onEndOfTurn() {
-        // No passive damage
     }
 
     @Override
@@ -92,6 +108,7 @@ public class BasicB extends CustomOrb implements ManualPassive{
         }
 
         this.evokeAmount = Math.max(0, this.baseEvokeAmount + focus);
+        updateDescription();
     }
 
     @Override

@@ -32,11 +32,7 @@ public class GoldPower extends AbstractPower {
 
     @Override
     public void updateDescription() {
-        if (amount == 1) {
-            description = DESCRIPTIONS[0];
-        } else {
-            description = DESCRIPTIONS[1] + amount + DESCRIPTIONS[2];
-        }
+        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 
     @Override

@@ -5,15 +5,24 @@ import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import racoonslingermod.orbs.BasicB;
 
+import static racoonslingermod.BasicMod.makeID;
+
 public class PowerPlayPower extends AbstractPower {
 
-    public static final String POWER_ID = "PowerPlayPower";
+    public static final String POWER_ID = makeID(PowerPlayPower.class.getSimpleName());
+
+    private static final PowerStrings powerStrings =
+            CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+    public static final String NAME = powerStrings.NAME;
+    public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
     public PowerPlayPower(AbstractCreature owner, int amount) {
-        this.name = "";
+        this.name = "Power Play";
         this.ID = POWER_ID;
         this.owner = owner;
         this.amount = amount;
@@ -32,7 +41,12 @@ public class PowerPlayPower extends AbstractPower {
 
     }
 
+    @Override
     public void updateDescription() {
-        this.description = "Load 1 Bullet when a Power is played";
+        if (amount == 1) {
+            description = DESCRIPTIONS[0];
+        } else {
+            description = DESCRIPTIONS[1] + amount + DESCRIPTIONS[2];
+        }
     }
 }

@@ -19,5 +19,72 @@
       "The next time you channel an Orb this turn, channel it ",
       " additional times."
     ]
+  },
+  "${modID}:PiercePower": {
+    "NAME": "Pierce",
+    "DESCRIPTIONS": [
+      "Basic Bullets hit all enemies"
+    ]
+  },
+  "${modID}:GoldPower": {
+    "NAME": "Plundered Loot",
+    "DESCRIPTIONS": [
+      "At the end of the combat gain ",
+      " Gold."
+    ]
+  },
+  "${modID}:LoadStartPower": {
+    "NAME": "Pre-Load",
+    "DESCRIPTIONS": [
+      "Load 1 basic bullet at the start of the turn.",
+      "Load ",
+      " basic bullets at the start of the turn."
+    ]
+  },
+  "${modID}:PowerPlayPower": {
+    "NAME": "Power Play",
+    "DESCRIPTIONS": [
+      "Load 1 Basic bullet when a power is played.",
+      "Load ",
+      " basic bullets when a power is played."
+    ]
+  },
+  "${modID}:PrefirePower": {
+    "NAME": "Pre-fire",
+    "DESCRIPTIONS": [
+      "At the start of your turn trigger the passive ability of your next orb.",
+      "At the start of your turn trigger the passive ability of your next ",
+      " orbs."
+    ]
+  },
+  "${modID}:RebuttalPower": {
+    "NAME": "Rebuttal",
+    "DESCRIPTIONS": [
+      "Whenever you take unblocked damage load 1 Basic bullet.",
+      "Whenever you take unblocked damage load ",
+      " Basic bullets."
+    ]
+  },
+  "${modID}:SliceandDicePower": {
+    "NAME": "Slice and Dice",
+    "DESCRIPTIONS": [
+      "Gain 1 [E] whenever a Blade card gets used.",
+      "Gain ",
+      " [E] whenever a Blade card gets used."
+    ]
+  },
+  "${modID}:HogWildPower": {
+    "NAME": "Hog Wild",
+    "DESCRIPTIONS": [
+      "First time you play a 0 [E] attack each turn, return it to your hand.",
+      "First ",
+      " times you play a 0 [E] attack each turn, return it to your hand."
+    ]
+  },
+  "${modID}:RefreshPower": {
+    "NAME": "Refresh",
+    "DESCRIPTIONS": [
+      "Whenever you play a Power, gain [E]."
+    ]
   }
 }

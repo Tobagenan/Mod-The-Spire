@@ -1,3 +1,4 @@
+
 package racoonslingermod.cards;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -5,16 +6,16 @@ import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.orbs.Lightning;
-import com.megacrit.cardcrawl.powers.ElectroPower;
 import racoonslingermod.character.MyCharacter;
 import racoonslingermod.orbs.BasicB;
+import racoonslingermod.powers.PiercePower;
 import racoonslingermod.util.CardStats;
 import racoonslingermod.util.MyTags;
 
 public class Volley extends BaseCard {
-    public static final String ID = makeID(racoonslingermod.cards.Volley.class.getSimpleName());
+
+    public static final String ID = makeID(Volley.class.getSimpleName());
+
     private static final CardStats info = new CardStats(
             MyCharacter.Meta.CARD_COLOR,
             CardType.POWER,
@@ -23,24 +24,31 @@ public class Volley extends BaseCard {
             2
     );
 
-    public Volley(){
+    public Volley() {
         super(ID, info);
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(MyTags.LOAD);
     }
 
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (!p.hasPower("Electrodynamics")) { //How to go about changing
-            this.addToBot(new ApplyPowerAction(p, p, new ElectroPower(p)));
+        if (!p.hasPower(PiercePower.POWER_ID)) {
+            this.addToBot(
+                    new ApplyPowerAction(
+                            p,
+                            p,
+                            new PiercePower(p)
+                    )
+            );
         }
 
-        for(int i = 0; i < this.magicNumber; ++i) {
-            AbstractOrb orb = new BasicB();
-            this.addToBot(new ChannelAction(orb));
+        for (int i = 0; i < this.magicNumber; i++) {
+            this.addToBot(new ChannelAction(new BasicB()));
         }
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
@@ -49,6 +57,7 @@ public class Volley extends BaseCard {
     }
 
     @Override
-    public AbstractCard makeCopy() {return new Volley();}
-
+    public AbstractCard makeCopy() {
+        return new Volley();
+    }
 }
